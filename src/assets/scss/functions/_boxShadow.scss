@@ -1,0 +1,3 @@
+@function getBoxShadow($color) {
+  @return 0 0 30px rgba($color: $color, $alpha: 0.5);
+}

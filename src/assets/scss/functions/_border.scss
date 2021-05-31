@@ -1,0 +1,3 @@
+@function getBorder($color, $width) {
+  @return 1$color solid $color;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "pacifico";
+  src: url("../fonts/Opificio_neue-regular.ttf") format("ttf");
+}
+@import "./variables/colors";
+@import "./variables/variables";
+@import "./mixins/display";
+@import "./variables/transition";
+@import "./default";
+@import "./pages/header";
+@import "./pages/welcome";
+@import "./pages/loading";
