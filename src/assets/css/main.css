@@ -3,6 +3,21 @@
   src: url("../fonts/Opificio_neue-regular.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: "Cera Pro Black Italic";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Black-Italic.otf);
+}
+
+@font-face {
+  font-family: "Cera Pro Bold";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Bold.otf);
+}
+
+@font-face {
+  font-family: "Cera Pro Light";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Light.otf);
+}
+
 body {
   background-color: #000;
   width: 100%;
@@ -18,7 +33,7 @@ a {
 }
 
 ul {
-  margin: o;
+  margin: 0;
 }
 
 h1,
@@ -105,6 +120,10 @@ input {
   margin-right: -5px;
 }
 
+.header-main-container.open {
+  pointer-events: auto;
+}
+
 .header-main-container.open .hamburger-area {
   background-color: #000;
 }
@@ -160,6 +179,7 @@ svg path {
   top: 0;
   bottom: 0;
   left: 0;
+  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,6 +214,11 @@ svg path {
   left: 120px;
   top: 10%;
   position: absolute;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  opacity: 0;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .header-links-main-container .links-wrapper .menu-text h1 {
@@ -206,6 +231,7 @@ svg path {
 
 .header-links-main-container .links-wrapper ul {
   margin-left: 200px;
+  pointer-events: none;
 }
 
 .header-links-main-container .links-wrapper ul .focusOut a {
@@ -284,7 +310,6 @@ svg path {
 .header-links-main-container .links-wrapper ul li a {
   font-weight: bold;
   font-size: 65px;
-  cursor: pointer;
   position: relative;
   display: block;
   color: #000;
@@ -424,6 +449,18 @@ svg path {
   height: 2800px;
 }
 
+.header-links-main-container.open .menu-text {
+  opacity: 1;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.header-links-main-container.open .links-wrapper ul {
+  pointer-events: auto;
+}
+
 .header-links-main-container.open .links-wrapper ul li {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
@@ -515,11 +552,163 @@ li:hover ~ .cursor1 {
 .welcome-page-main-container {
   width: 100%;
   height: 100%;
-  background-image: url("../images/bg1.jpg");
+  background-image: url("../images/bg3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.welcome-page-main-container .home-main-title {
+  font-family: "Cera Pro Bold", sans-serif;
+  color: #f5f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome-page-main-container .home-main-title .title-1 {
+  -webkit-transform: translate(5rem, 0);
+          transform: translate(5rem, 0);
+}
+
+.welcome-page-main-container .home-main-title .title-1 h3 {
+  font-family: "Cera Pro Light", sans-serif;
+  margin: 0;
+  color: #d6d6d6;
+  font-weight: 300;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+}
+
+.welcome-page-main-container .home-main-title .title-1 h3 span {
+  font-weight: 300;
+  color: #d6d6d6;
+  margin-right: 0.7rem;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+}
+
+.welcome-page-main-container .home-main-title .title-name .main-name-title {
+  font-size: 8rem;
+  color: #d6d6d6;
+  margin: 0;
+  text-shadow: 0.6rem 0.6rem rgba(0, 0, 0, 0.664);
+  margin-top: -0.5rem;
+}
+
+.welcome-page-main-container .home-main-title .home-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(5rem, 0);
+          transform: translate(5rem, 0);
+}
+
+.welcome-page-main-container .home-main-title .home-about h3 {
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+  color: #d6d6d6;
+  margin: 0;
+  font-family: "Cera Pro Light", sans-serif;
+  font-weight: 300;
+}
+
+.welcome-page-main-container .icons-wrapper {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+.welcome-page-main-container .icons-wrapper ul {
+  padding: 0;
+}
+
+.welcome-page-main-container .icons-wrapper ul li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.welcome-page-main-container .icons-wrapper ul li a {
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+.welcome-page-main-container .icons-wrapper ul li a .home-links-icon {
+  font-size: 1rem;
+}
+
+.welcome-page-main-container .arrow-down {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(0, -2rem);
+          transform: translate(0, -2rem);
+}
+
+.welcome-page-main-container .arrow-down .text {
+  -webkit-transform: rotate(90deg) translate(-4rem, 0);
+          transform: rotate(90deg) translate(-4rem, 0);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+  color: #d6d6d6;
+  margin: 0;
+  font-family: "Cera Pro Light", sans-serif;
+  font-weight: 300;
+}
+
+.welcome-page-main-container .arrow-down .arrow {
+  width: 3rem;
+  height: 0.1rem;
+  background-color: #d6d6d6;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.about-main-container {
+  min-height: 700px;
+  width: 100%;
+  background-image: url("../images/bg3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .loading-screen-main-container {

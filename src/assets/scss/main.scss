@@ -2,6 +2,22 @@
   font-family: "pacifico";
   src: url("../fonts/Opificio_neue-regular.ttf") format("ttf");
 }
+
+@font-face {
+  font-family: "Cera Pro Black Italic";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Black-Italic.otf);
+}
+
+@font-face {
+  font-family: "Cera Pro Bold";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Bold.otf);
+}
+
+@font-face {
+  font-family: "Cera Pro Light";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Light.otf);
+}
+
 @import "./variables/colors";
 @import "./variables/variables";
 @import "./mixins/display";
@@ -9,4 +25,5 @@
 @import "./default";
 @import "./pages/header";
 @import "./pages/welcome";
+@import "./pages/about";
 @import "./pages/loading";

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import "./assets/css/main.css";
 import Welcome from "./layouts/Welcome";
+import About from "./layouts/About";
 import { Switch, Route } from "react-router-dom";
 import Loading from "./components/loading";
 
@@ -19,14 +20,11 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className="App">
+        <main className="App">
           <Header />
-          <Switch>
-            <Route path="/" component={Welcome} />
-          </Switch>
-          {/* <div className="cursor1"></div> */}
-          {/* <div className="cursor2"></div> */}
-        </div>
+          <Welcome />
+          <About />
+        </main>
         {/* <Loading /> */}
       </>
     );

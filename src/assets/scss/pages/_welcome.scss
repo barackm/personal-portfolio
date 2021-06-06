@@ -1,9 +1,97 @@
 .welcome-page-main-container {
   width: 100%;
   height: 100%;
-  background-image: url("../images/bg1.jpg");
+  background-image: url("../images/bg3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 700px;
+  @include flexCenter(column);
+  position: relative;
+  .home-main-title {
+    font-family: "Cera Pro Bold", sans-serif;
+    color: $white;
+    @include flexCenter(column);
+    .title-1 {
+      transform: translate(5rem, 0);
+      h3 {
+        font-family: "Cera Pro Light", sans-serif;
+        margin: 0;
+        color: $light;
+        font-weight: 300;
+        text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+        span {
+          font-weight: 300;
+          color: $light;
+          margin-right: 0.7rem;
+          text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+        }
+      }
+    }
+    .title-name {
+      .main-name-title {
+        font-size: 8rem;
+        color: $light;
+        margin: 0;
+        text-shadow: 0.6rem 0.6rem rgba(0, 0, 0, 0.664);
+        margin-top: -0.5rem;
+      }
+    }
+    .home-about {
+      display: flex;
+      flex-direction: column;
+      transform: translate(5rem, 0);
+      h3 {
+        text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+        color: $light;
+        margin: 0;
+        font-family: "Cera Pro Light", sans-serif;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .icons-wrapper {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        margin: 1rem 0;
+        a {
+          text-decoration: none;
+          color: $light;
+          .home-links-icon {
+            font-size:1rem;
+          }
+        }
+      }
+    }
+  }
+  .arrow-down {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(0, -2rem);
+    .text {
+      transform: rotate(90deg) translate(-4rem, 0);
+      text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+      color: $light;
+      margin: 0;
+      font-family: "Cera Pro Light", sans-serif;
+      font-weight: 300;
+    }
+    .arrow {
+      width: 3rem;
+      height: 0.1rem;
+      background-color: $light;
+      transform: rotate(90deg);
+    }
+  }
 }
