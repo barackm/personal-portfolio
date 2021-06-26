@@ -1,63 +1,79 @@
 .header-main-container {
   padding: 20px 0;
+
   @include spaceBetween(row);
+
   z-index: 99999;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+
   .logo-area {
     margin-left: 20px;
   }
+
   .hamburger-area {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: $white;
     cursor: pointer;
-    @include flexCenter(column);
-    transition: all 0.3s ease;
 
+    @include flexCenter(column);
+
+    transition: all 0.3s ease;
     margin-right: 20px;
 
     .burger {
       width: 20px;
       border-bottom: 1.99px solid $dark;
       margin: 2px 0;
+
       &:nth-child(2) {
         width: 15px;
         margin-right: -5px;
       }
+
       &:nth-child(1) {
       }
     }
   }
+
   &.open {
     pointer-events: auto;
+
     .hamburger-area {
       background-color: $dark;
+
       .burger {
         border-bottom-color: $white;
         width: 15px;
+
         &:nth-child(2) {
           opacity: 0;
         }
+
         &:nth-child(1) {
-          transform: rotate(45deg) translate(9px, 0px);
+          transform: rotate(45deg) translate(9px, 0);
           margin-right: 13px;
         }
+
         &:nth-child(3) {
-          transform: rotate(-45deg) translate(8px, 0px);
+          transform: rotate(-45deg) translate(8px, 0);
           margin-right: 13px;
         }
       }
     }
-    svg {
+
+    .logo-wrapper {
       width: 50px;
+
       path {
         fill: $white;
         transition-delay: 0.7s;
       }
+
       path {
         &:nth-child(1) {
           fill: $dark;
@@ -66,8 +82,10 @@
     }
   }
 }
+
 svg {
   width: 50px;
+
   path {
     transition: $transition;
   }
@@ -83,6 +101,7 @@ svg {
   pointer-events: none;
 
   @include flexCenter(row);
+
   .links-wrapper {
     z-index: 999999;
     flex: 1;
@@ -90,6 +109,7 @@ svg {
     position: relative;
     transition: $transition;
     transition-delay: 1s;
+
     .menu-text {
       transform: rotate(-90deg);
       left: 120px;
@@ -98,6 +118,7 @@ svg {
       transition: $transition;
       opacity: 0;
       transition-delay: 0.1s;
+
       h1 {
         color: $dark;
         text-transform: uppercase;
@@ -106,6 +127,7 @@ svg {
         font-size: 14px;
       }
     }
+
     ul {
       margin-left: 200px;
       pointer-events: none;
@@ -115,10 +137,12 @@ svg {
           transition: all 0.7s cubic-bezier(0.63, 0.03, 0.21, 1);
           clip-path: inset(0 100% 0 0);
         }
+
         .link-text-overlay {
           opacity: 1;
         }
       }
+
       .focused {
         a {
           transition: transform 0.75s $custom-ease-4;
@@ -126,14 +150,17 @@ svg {
           animation: animateFocused 0.7s ease-in;
         }
       }
+
       @keyframes animateFocused {
         from {
           clip-path: inset(0 100% 0 0);
         }
+
         to {
           clip-path: inset(0 0 0 0);
         }
       }
+
       li {
         transition: $transition;
         transform: translateX(-70px);
@@ -166,6 +193,7 @@ svg {
           clip-path: inset(0 0 0 0);
           transition: all 0.75s cubic-bezier(0.63, 0.03, 0.21, 1);
         }
+
         .link-text-overlay {
           position: absolute;
           top: 0;
@@ -180,17 +208,20 @@ svg {
           position: absolute;
           transform-origin: left;
         }
+
         &:hover {
           .link-number {
             opacity: 1;
             left: 0;
             transform: translateX(0);
           }
+
           a {
             transform: translateX(35px);
 
             // clip-path: inset(0 0 0 0);
           }
+
           .link-text-overlay {
             transform: translateX(35px);
           }
@@ -199,18 +230,22 @@ svg {
         &:nth-child(2) {
           transition-delay: 0.1s;
         }
+
         &:nth-child(3) {
           transition-delay: 0.2s;
         }
+
         &:nth-child(4) {
           transition-delay: 0.3s;
         }
+
         &:nth-child(5) {
           transition-delay: 0.4s;
         }
       }
     }
   }
+
   .contact-details {
     flex: 1;
     z-index: 999;
@@ -219,6 +254,7 @@ svg {
     padding-top: 300px;
     opacity: 0;
     transition-duration: 1s;
+
     .contact-text {
       p {
         color: $primary;
@@ -228,6 +264,7 @@ svg {
         margin-bottom: -30px;
         font-size: 18px;
       }
+
       span {
         margin-top: 20px;
         display: block;
@@ -235,9 +272,11 @@ svg {
         font-weight: bold;
       }
     }
+
     .contact-details-icon-wrapper {
       margin-top: 20px;
       margin-left: -10px;
+
       .contact-icon-item {
         a {
           margin: 0;
@@ -250,6 +289,7 @@ svg {
             font-size: 20px;
             margin: 0 -5px;
           }
+
           &:hover {
             color: lighten($dark, 40%);
           }
@@ -257,6 +297,7 @@ svg {
       }
     }
   }
+
   .navbar-overlay-main-container {
     width: 5px;
     height: 5px;
@@ -270,6 +311,7 @@ svg {
     transition: all 1.5s ease;
     // transition-duration: 2s;
   }
+
   &.open {
     .navbar-overlay-main-container {
       top: -50%;
@@ -277,11 +319,13 @@ svg {
       width: 2800px;
       height: 2800px;
     }
+
     .menu-text {
       opacity: 1;
       transition: $transition;
       transition-delay: 0.5s;
     }
+
     .links-wrapper {
       ul {
         pointer-events: auto;
@@ -295,18 +339,22 @@ svg {
           &:nth-child(2) {
             transition-delay: 0.6s;
           }
+
           &:nth-child(3) {
             transition-delay: 0.7s;
           }
+
           &:nth-child(4) {
             transition-delay: 0.8s;
           }
+
           &:nth-child(5) {
             transition-delay: 0.9s;
           }
         }
       }
     }
+
     .contact-details {
       opacity: 1;
       transition-delay: 0.8s;
@@ -314,6 +362,7 @@ svg {
     }
   }
 }
+
 .cursor1 {
   position: fixed;
   width: 30px;
@@ -326,10 +375,12 @@ svg {
   transform: translate(-50%, -50%);
   z-index: 9999999999;
   transition: 0.1s;
+
   &.open {
     border-color: lighten($dark, 60%);
   }
 }
+
 .cursor2 {
   //   transition: 0.1s;
   position: fixed;
@@ -342,6 +393,7 @@ svg {
   top: 0;
   transform: translate(-50%, -50%);
   z-index: 9999999999;
+
   &.open {
     background-color: $primary;
   }
@@ -352,6 +404,7 @@ li:hover ~ .cursor1 {
   background-color: rgba($color: $white, $alpha: 0.2);
   opacity: 0.5;
 }
+
 .hamburger-area {
   &.magnet-mouse-active {
     width: 50px;

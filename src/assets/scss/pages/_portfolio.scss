@@ -1,0 +1,120 @@
+.portfolio-main-container {
+  border-top: $border;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  //   @include flexCenter(row);
+
+  .portfolio-wrapper {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .home-hello-wrapper {
+    // @include flexCenter(row);
+
+    justify-content: flex-start;
+
+    .hello-line {
+      width: 3rem;
+      height: 0.1rem;
+      background-color: $primary;
+    }
+
+    .hero-hello {
+      color: $primary;
+      margin-left: 0.5rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .portfolio-works-wrapper {
+    .links-wrapper {
+      @include spaceBetween(row);
+
+      h3 {
+        color: $white;
+      }
+
+      ul {
+        @include flexCenter(row);
+
+        li {
+          margin: 0 1rem;
+
+          a {
+            color: $lightBlue;
+            font-size: 1.1rem;
+
+            &:hover {
+              color: $primary;
+            }
+
+            &.active {
+              color: $primary;
+              position: relative;
+
+              &::after {
+                content: "";
+                position: absolute;
+                width: 30%;
+                height: 2px;
+                background-color: $primary;
+                left: 0;
+                bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .projects-grid-wrapper {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+}
+
+.project-item-wrapper {
+  background-color: rgba($lightBlue, 0.1);
+  border-radius: 0.7rem;
+  padding: 2rem 1rem;
+
+  .project-title {
+    margin: 0;
+    font-weight: bold;
+    color: $primary;
+    font-size: 1rem;
+  }
+
+  .project-details {
+    color: $lightBlue;
+  }
+
+  .project-technology-tags {
+    @include flexCenter(row);
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .project-tag {
+      background-color: rgba($lightBlue, 0.4);
+      color: $lightBlue;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 0.2rem 0.4rem;
+      margin-right: 0.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+
+  .project-images-preview {
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 15rem;
+    border-radius: 0.2rem;
+    background-color: $primary;
+  }
+}

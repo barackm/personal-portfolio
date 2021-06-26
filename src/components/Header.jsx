@@ -69,6 +69,7 @@ class Header extends Component {
           <div className="logo-container">
             <div className="logo-area">
               <svg
+                className="logo-wrapper"
                 viewBox="0 0 157 149"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

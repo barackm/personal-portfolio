@@ -1,0 +1,116 @@
+.what-i-do-main-container {
+  border-top: $border;
+  width: 100%;
+  padding-bottom: 5rem;
+
+  @include flexCenter(row);
+
+  align-items: flex-start;
+
+  .left-area-coontainer {
+    @include flexCenter(row);
+
+    justify-content: flex-start;
+    // align-items: flex-start;
+    margin-left: 9rem;
+    padding-top: 5rem;
+    height: 100%;
+    flex: 1;
+
+    .mobile-website-wrapper {
+      @include flexCenter(column);
+
+      align-items: flex-start;
+
+      .work-item-wrapper {
+        background-color: rgba($lightBlue, 0.1);
+        padding: 2rem;
+        width: 9rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        @include flexCenter(row);
+
+        .text-wrapper {
+          color: $white;
+          font-weight: bold;
+          margin-left: 1rem;
+          font-size: 0.9rem;
+        }
+
+        .icon-wrapper {
+          .mobile-icon {
+            height: 5rem;
+
+            path {
+              width: 100%;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 1rem;
+        }
+      }
+    }
+
+    .web-app-wrapper {
+      .work-item-wrapper.backend {
+        background-color: rgba($lightBlue, 0.1);
+        padding: 2rem;
+        width: 9rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        margin-left: 2rem;
+
+        @include flexCenter(row);
+
+        .text-wrapper {
+          color: $white;
+          font-weight: bold;
+          margin-left: 1rem;
+          font-size: 0.9rem;
+        }
+
+        .icon-wrapper {
+          .mobile-icon {
+            height: 5rem;
+
+            path {
+              width: 100%;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 1rem;
+        }
+      }
+    }
+  }
+
+  .right-area-main-container {
+    margin-right: 9rem;
+    padding-top: 3rem;
+    flex: 1;
+
+    .slogan {
+      color: $white;
+      font-size: 2.3rem;
+      margin: 0;
+    }
+
+    .about-work {
+      color: $lightBlue;
+      font-size: 1.6rem;
+    }
+  }
+}
