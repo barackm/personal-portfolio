@@ -732,3 +732,242 @@
 //     }
 //   }
 // }
+
+.home-page-main-container {
+  @include flexCenter(row);
+
+  position: relative;
+  min-height: 700px;
+
+  .aside-links-wrapper {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+
+    ul {
+      li {
+        margin: 0.5rem 0;
+
+        a {
+          color: $lightBlue;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .home-content-wrapper {
+    @include flexCenter(column);
+
+    width: 100%;
+
+    .home-text-content {
+      margin-bottom: 3rem;
+      width: 100%;
+      margin-left: 3rem;
+
+      .home-hello-wrapper {
+        @include flexCenter(row);
+
+        justify-content: flex-start;
+
+        .hello-line {
+          width: 2.5rem;
+          height: 2px;
+          background-color: $primary;
+          margin-right: 0.5rem;
+        }
+
+        .hero-hello {
+          color: $primary;
+          margin: 0;
+        }
+      }
+
+      .hero-text-wrapper {
+        font-size: 2.2rem;
+        color: $white;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 1rem;
+        line-height: 1;
+        width: 70%;
+      }
+
+      .profession-area {
+        .hero-profession {
+          color: $lightBlue;
+        }
+      }
+
+      .btn-wrapper {
+        @include flexCenter(row);
+
+        justify-content: flex-start;
+
+        .hire-me-btn {
+          padding: 0.5rem 0.9rem;
+          background-color: lighten($blue, 8%);
+          border: 1px solid $primary;
+          border-radius: 0.3rem;
+          color: $primary;
+          font-weight: bold;
+          margin-right: 1rem;
+          font-size: 1.1rem;
+          cursor: pointer;
+        }
+
+        .download-cv-btn {
+          color: $primary;
+          font-weight: bold;
+          text-align: center;
+          position: relative;
+          font-size: 1rem;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 97%;
+            height: 0.1rem;
+            background-color: $primary;
+            left: 0;
+            bottom: -0.1rem;
+          }
+
+          .download-icon {
+            margin-left: -0.8rem;
+            font-size: 1.3rem;
+            transform: translateY(0.2rem);
+          }
+        }
+      }
+    }
+
+    .image-content-wrapper {
+      @include flexCenter(row);
+
+      width: 100%;
+
+      .image-wrapper {
+        width: 90%;
+        background-color: $blueLighter;
+        border-radius: 0.6rem;
+        height: 14rem;
+        position: relative;
+
+        @include flexCenter(row);
+
+        .home-image {
+          max-width: 93%;
+          height: 93%;
+          border-radius: 0.5rem;
+        }
+
+        .dots-svg {
+          position: absolute;
+          top: -1rem;
+          right: -1rem;
+          width: 4rem;
+          height: 4rem;
+          z-index: -1;
+          fill: rgba($primary, 0.3);
+          stroke: rgba($primary, 0.3);
+
+          path {
+            fill: rgba($primary, 0.3);
+            stroke: rgba($primary, 0.3);
+          }
+        }
+
+        .play-icon-wrapper {
+          position: absolute;
+          bottom: -1rem;
+          left: -1.5rem;
+          background-color: rgba($primary, 0.2);
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+
+          @include flexCenter(row);
+
+          .play-container {
+            width: 70%;
+            height: 70%;
+            background-color: rgba($primary, 0.4);
+            border-radius: 50%;
+
+            @include flexCenter(row);
+
+            .icon-play {
+              color: $primary;
+              font-size: 1.4rem;
+            }
+          }
+        }
+
+        .years-of-experiance {
+          position: absolute;
+          bottom: -2.3rem;
+          right: 0;
+          z-index: 99;
+          padding: 0.5rem;
+
+          .blur-area {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backdrop-filter: blur(10px);
+            z-index: -1;
+          }
+
+          @include flexCenter(row);
+
+          .icon-wrapper {
+            width: 2rem;
+            height: 1.7rem;
+            margin-right: 0.4rem;
+            background-color: rgba($white, 0.3);
+            border-radius: 0.2rem;
+
+            @include flexCenter(row);
+
+            .computer-icon {
+              font-size: 1rem;
+              color: $primary;
+            }
+          }
+
+          .experiance-text {
+            @include flexCenter(column);
+
+            h5 {
+              margin: 0;
+              color: darken($white, 20%);
+              font-size: 0.7rem;
+            }
+
+            .years-wrapper {
+              @include flexCenter(row);
+
+              h2 {
+                color: $white;
+                margin: 0;
+                margin-right: 0.2rem;
+              }
+
+              span {
+                color: $white;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

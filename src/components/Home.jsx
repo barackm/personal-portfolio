@@ -9,7 +9,7 @@ import {
   FiGithub,
   FiLinkedin,
 } from "react-icons/fi";
-import barack from "../assets/images/barack.jpeg";
+import barack from "../assets/images/project2.png";
 
 export default class Home extends Component {
   render() {
@@ -95,7 +95,7 @@ export default class Home extends Component {
           </div>
           <div className="image-content-wrapper">
             <div className="image-wrapper">
-              <img src={barack} alt="" srcset="" />
+              <img src={barack} alt="" className="home-image" />
 
               <svg
                 version="1.0"

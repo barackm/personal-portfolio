@@ -67,6 +67,7 @@ input {
 
 #root {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .App {
@@ -691,5 +692,380 @@ li:hover ~ .cursor1 {
   .header-links-main-container .links-wrapper ul li .link-text-overlay {
     font-size: 2rem;
   }
+}
+
+.home-page-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  min-height: 700px;
+}
+
+.home-page-main-container .aside-links-wrapper {
+  position: absolute;
+  right: 0;
+  top: 10rem;
+}
+
+.home-page-main-container .aside-links-wrapper ul li {
+  margin: 0.5rem 0;
+}
+
+.home-page-main-container .aside-links-wrapper ul li a {
+  color: #808dad;
+}
+
+.home-page-main-container .aside-links-wrapper ul li a:hover {
+  color: #ed4a4a;
+}
+
+.home-page-main-container .home-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content {
+  margin-bottom: 3rem;
+  width: 100%;
+  margin-left: 3rem;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .home-hello-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .home-hello-wrapper .hello-line {
+  width: 2.5rem;
+  height: 2px;
+  background-color: #ed4a4a;
+  margin-right: 0.5rem;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .home-hello-wrapper .hero-hello {
+  color: #ed4a4a;
+  margin: 0;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .hero-text-wrapper {
+  font-size: 2.2rem;
+  color: #f5f3f3;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 1rem;
+  line-height: 1;
+  width: 70%;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .profession-area .hero-profession {
+  color: #808dad;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .hire-me-btn {
+  padding: 0.5rem 0.9rem;
+  background-color: #172450;
+  border: 1px solid #ed4a4a;
+  border-radius: 0.3rem;
+  color: #ed4a4a;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .download-cv-btn {
+  color: #ed4a4a;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  font-size: 1rem;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .download-cv-btn::after {
+  content: "";
+  position: absolute;
+  width: 97%;
+  height: 0.1rem;
+  background-color: #ed4a4a;
+  left: 0;
+  bottom: -0.1rem;
+}
+
+.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .download-cv-btn .download-icon {
+  margin-left: -0.8rem;
+  font-size: 1.3rem;
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper {
+  width: 90%;
+  background-color: rgba(131, 144, 175, 0.4);
+  border-radius: 0.6rem;
+  height: 14rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .home-image {
+  max-width: 93%;
+  height: 93%;
+  border-radius: 0.5rem;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .dots-svg {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: -1;
+  fill: rgba(237, 74, 74, 0.3);
+  stroke: rgba(237, 74, 74, 0.3);
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .dots-svg path {
+  fill: rgba(237, 74, 74, 0.3);
+  stroke: rgba(237, 74, 74, 0.3);
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .play-icon-wrapper {
+  position: absolute;
+  bottom: -1rem;
+  left: -1.5rem;
+  background-color: rgba(237, 74, 74, 0.2);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .play-icon-wrapper .play-container {
+  width: 70%;
+  height: 70%;
+  background-color: rgba(237, 74, 74, 0.4);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .play-icon-wrapper .play-container .icon-play {
+  color: #ed4a4a;
+  font-size: 1.4rem;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance {
+  position: absolute;
+  bottom: -2.3rem;
+  right: 0;
+  z-index: 99;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .blur-area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .icon-wrapper {
+  width: 2rem;
+  height: 1.7rem;
+  margin-right: 0.4rem;
+  background-color: rgba(245, 243, 243, 0.3);
+  border-radius: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .icon-wrapper .computer-icon {
+  font-size: 1rem;
+  color: #ed4a4a;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .experiance-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .experiance-text h5 {
+  margin: 0;
+  color: #c7bbbb;
+  font-size: 0.7rem;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .experiance-text .years-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .experiance-text .years-wrapper h2 {
+  color: #f5f3f3;
+  margin: 0;
+  margin-right: 0.2rem;
+}
+
+.home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .experiance-text .years-wrapper span {
+  color: #f5f3f3;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
