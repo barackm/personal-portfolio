@@ -69,3 +69,111 @@
 //     }
 //   }
 // }
+
+.about-page-main-container {
+  padding-top: 3rem;
+  border-top: $border;
+  padding-bottom: 3rem;
+
+  .right-area-main-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    .languages-title {
+      color: $white;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      position: relative;
+      margin: 1rem 0;
+      font-weight: bold;
+
+      span {
+        color: $primary;
+      }
+
+      &::after {
+        content: "";
+        width: 30%;
+        height: 2px;
+        background-color: $primary;
+        left: 0;
+        bottom: -0.2rem;
+        position: absolute;
+      }
+    }
+
+    .btn-wrapper.about {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 2rem 0;
+
+      .hire-me-btn {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .about-work-details-wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      .work-about-item-wrapper {
+        @include flexCenter(row);
+
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        color: $white;
+
+        .check-list-icon {
+          color: $primary;
+          width: auto;
+          font-size: 1rem;
+          margin-right: 1rem;
+        }
+
+        h3 {
+          color: $white;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .right-about-page-area {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    @include flexCenter(row);
+
+    .image-container {
+      width: 90%;
+      height: 10rem;
+      background-color: $blueLighter;
+      border-radius: 0.4rem;
+      position: relative;
+
+      @include flexCenter(row);
+
+      .project-about-img {
+        max-width: 92%;
+        height: 92%;
+        border-radius: 0.4rem;
+      }
+
+      .dots-svg.about {
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+        width: 4rem;
+        height: 4rem;
+        z-index: -1;
+        fill: rgba($primary, 0.3);
+        stroke: rgba($primary, 0.3);
+
+        path {
+          fill: rgba($primary, 0.3);
+          stroke: rgba($primary, 0.3);
+        }
+      }
+    }
+  }
+}

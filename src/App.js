@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import "./assets/css/main.css";
 import Home from "./components/Home";
 import Work from "./components/Work";
-// import About from "./components/About";
+import About from "./components/About";
 // import Portfolio from "./components/Portfolio";
 // import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
@@ -26,7 +26,7 @@ class App extends React.Component {
           <Header />
           <Home />
           <Work />
-          {/* <About /> */}
+          <About />
           {/* <Portfolio /> */}
           {/* <Contact /> */}
           {/* <Footer /> */}

@@ -785,48 +785,6 @@
           color: $lightBlue;
         }
       }
-
-      .btn-wrapper {
-        @include flexCenter(row);
-
-        justify-content: flex-start;
-
-        .hire-me-btn {
-          padding: 0.5rem 0.9rem;
-          background-color: lighten($blue, 8%);
-          border: 1px solid $primary;
-          border-radius: 0.3rem;
-          color: $primary;
-          font-weight: bold;
-          margin-right: 1rem;
-          font-size: 1.1rem;
-          cursor: pointer;
-        }
-
-        .download-cv-btn {
-          color: $primary;
-          font-weight: bold;
-          text-align: center;
-          position: relative;
-          font-size: 1rem;
-
-          &::after {
-            content: "";
-            position: absolute;
-            width: 97%;
-            height: 0.1rem;
-            background-color: $primary;
-            left: 0;
-            bottom: -0.1rem;
-          }
-
-          .download-icon {
-            margin-left: -0.8rem;
-            font-size: 1.3rem;
-            transform: translateY(0.2rem);
-          }
-        }
-      }
     }
 
     .image-content-wrapper {

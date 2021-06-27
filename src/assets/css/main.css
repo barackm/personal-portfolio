@@ -768,62 +768,6 @@ li:hover ~ .cursor1 {
   color: #808dad;
 }
 
-.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .hire-me-btn {
-  padding: 0.5rem 0.9rem;
-  background-color: #172450;
-  border: 1px solid #ed4a4a;
-  border-radius: 0.3rem;
-  color: #ed4a4a;
-  font-weight: bold;
-  margin-right: 1rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .download-cv-btn {
-  color: #ed4a4a;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  font-size: 1rem;
-}
-
-.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .download-cv-btn::after {
-  content: "";
-  position: absolute;
-  width: 97%;
-  height: 0.1rem;
-  background-color: #ed4a4a;
-  left: 0;
-  bottom: -0.1rem;
-}
-
-.home-page-main-container .home-content-wrapper .home-text-content .btn-wrapper .download-cv-btn .download-icon {
-  margin-left: -0.8rem;
-  font-size: 1.3rem;
-  -webkit-transform: translateY(0.2rem);
-          transform: translateY(0.2rem);
-}
-
 .home-page-main-container .home-content-wrapper .image-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1040,7 +984,7 @@ li:hover ~ .cursor1 {
 }
 
 .what-i-do-main-container {
-  border-top: 1px solid rgba(128, 141, 173, 0.1);
+  border-top: 1px solid rgba(128, 141, 173, 0.2);
   padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1149,17 +1093,154 @@ li:hover ~ .cursor1 {
   padding-right: 2rem;
 }
 
-.what-i-do-main-container .right-area-main-container .slogan {
-  color: #f5f3f3;
-  margin: 0;
-  font-size: 1.5rem;
+.about-page-main-container {
+  padding-top: 3rem;
+  border-top: 1px solid rgba(128, 141, 173, 0.2);
+  padding-bottom: 3rem;
 }
 
-.what-i-do-main-container .right-area-main-container .about-work {
-  color: #808dad;
-  margin: 1rem 0;
+.about-page-main-container .right-area-main-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.about-page-main-container .right-area-main-container .languages-title {
+  color: #f5f3f3;
   font-size: 0.8rem;
-  line-height: 1.2;
+  text-transform: uppercase;
+  position: relative;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.about-page-main-container .right-area-main-container .languages-title span {
+  color: #ed4a4a;
+}
+
+.about-page-main-container .right-area-main-container .languages-title::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #ed4a4a;
+  left: 0;
+  bottom: -0.2rem;
+  position: absolute;
+}
+
+.about-page-main-container .right-area-main-container .btn-wrapper.about {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.about-page-main-container .right-area-main-container .btn-wrapper.about .hire-me-btn {
+  margin-bottom: 0.5rem;
+}
+
+.about-page-main-container .right-area-main-container .about-work-details-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.about-page-main-container .right-area-main-container .about-work-details-wrapper .work-about-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 1rem;
+  color: #f5f3f3;
+}
+
+.about-page-main-container .right-area-main-container .about-work-details-wrapper .work-about-item-wrapper .check-list-icon {
+  color: #ed4a4a;
+  width: auto;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.about-page-main-container .right-area-main-container .about-work-details-wrapper .work-about-item-wrapper h3 {
+  color: #f5f3f3;
+  margin: 0;
+}
+
+.about-page-main-container .right-about-page-area {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about-page-main-container .right-about-page-area .image-container {
+  width: 90%;
+  height: 10rem;
+  background-color: rgba(131, 144, 175, 0.2);
+  border-radius: 0.4rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about-page-main-container .right-about-page-area .image-container .project-about-img {
+  max-width: 92%;
+  height: 92%;
+  border-radius: 0.4rem;
+}
+
+.about-page-main-container .right-about-page-area .image-container .dots-svg.about {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: -1;
+  fill: rgba(237, 74, 74, 0.3);
+  stroke: rgba(237, 74, 74, 0.3);
+}
+
+.about-page-main-container .right-about-page-area .image-container .dots-svg.about path {
+  fill: rgba(237, 74, 74, 0.3);
+  stroke: rgba(237, 74, 74, 0.3);
 }
 
 .home-hello-wrapper {
@@ -1191,5 +1272,74 @@ li:hover ~ .cursor1 {
 .home-hello-wrapper .hero-hello {
   color: #ed4a4a;
   margin: 0;
+}
+
+.slogan {
+  color: #f5f3f3;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.about-work {
+  color: #808dad;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.btn-wrapper .hire-me-btn {
+  padding: 0.5rem 0.9rem;
+  background-color: #172450;
+  border: 1px solid #ed4a4a;
+  border-radius: 0.3rem;
+  color: #ed4a4a;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn-wrapper .download-cv-btn {
+  color: #ed4a4a;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  font-size: 1rem;
+}
+
+.btn-wrapper .download-cv-btn::after {
+  content: "";
+  position: absolute;
+  width: 97%;
+  height: 0.1rem;
+  background-color: #ed4a4a;
+  left: 0;
+  bottom: -0.1rem;
+}
+
+.btn-wrapper .download-cv-btn .download-icon {
+  margin-left: -0.8rem;
+  font-size: 1.3rem;
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
 }
 /*# sourceMappingURL=main.css.map */
