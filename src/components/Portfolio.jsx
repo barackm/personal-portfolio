@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProjectCard from "./common/ProjectCard";
-import project1 from "../assets/images/projects/project1.png";
+import project1 from "../assets/images/projects/project3.png";
 
 export default class Portfolio extends Component {
   render() {
