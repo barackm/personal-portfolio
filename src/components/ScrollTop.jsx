@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { withRouter } from "react-router-dom";
-import Loading from "./loading";
 
 class ScrollToTop extends Component {
   state = {
