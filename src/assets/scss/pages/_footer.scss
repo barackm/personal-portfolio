@@ -1,69 +1,69 @@
-.footer-main-container {
-  @include flexCenter(row);
+// .footer-main-container {
+//   @include flexCenter(row);
 
-  border-top: $border;
-  padding-top: 2rem;
+//   border-top: $border;
+//   padding-top: 2rem;
 
-  .footer-content-container {
-    @include flexCenter(column);
+//   .footer-content-container {
+//     @include flexCenter(column);
 
-    margin: 0 9rem;
-    flex: 1;
-    align-items: flex-start;
+//     margin: 0 9rem;
+//     flex: 1;
+//     align-items: flex-start;
 
-    .footer-up {
-      width: 100%;
-      flex: 1;
-      border-bottom: $border;
-      padding-bottom: 1rem;
+//     .footer-up {
+//       width: 100%;
+//       flex: 1;
+//       border-bottom: $border;
+//       padding-bottom: 1rem;
 
-      @include spaceBetween(row);
+//       @include spaceBetween(row);
 
-      ul {
-        padding: 0;
+//       ul {
+//         padding: 0;
 
-        @include flexCenter(row);
+//         @include flexCenter(row);
 
-        li {
-          margin-right: 1rem;
+//         li {
+//           margin-right: 1rem;
 
-          a {
-            color: $lightBlue;
-            font-weight: bold;
+//           a {
+//             color: $lightBlue;
+//             font-weight: bold;
 
-            &:hover {
-              color: $primary;
-            }
+//             &:hover {
+//               color: $primary;
+//             }
 
-            &.active {
-              color: $primary;
-            }
-          }
-        }
-      }
+//             &.active {
+//               color: $primary;
+//             }
+//           }
+//         }
+//       }
 
-      p {
-        color: $white;
-        font-weight: bold;
-      }
-    }
+//       p {
+//         color: $white;
+//         font-weight: bold;
+//       }
+//     }
 
-    .footer-down {
-      width: 100%;
+//     .footer-down {
+//       width: 100%;
 
-      @include flexCenter(row);
+//       @include flexCenter(row);
 
-      p {
-        color: $lightBlue;
+//       p {
+//         color: $lightBlue;
 
-        .name {
-          color: $lightBlue;
+//         .name {
+//           color: $lightBlue;
 
-          &:hover {
-            color: $primary;
-          }
-        }
-      }
-    }
-  }
-}
+//           &:hover {
+//             color: $primary;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

@@ -25,11 +25,11 @@ class App extends React.Component {
         <main className="App">
           <Header />
           <Home />
-          <Work />
-          <About />
-          <Portfolio />
-          <Contact />
-          <Footer />
+          {/* <Work /> */}
+          {/* <About /> */}
+          {/* <Portfolio /> */}
+          {/* <Contact /> */}
+          {/* <Footer /> */}
         </main>
         {/* <Loading /> */}
       </>
