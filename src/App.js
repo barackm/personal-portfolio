@@ -25,7 +25,7 @@ class App extends React.Component {
         <main className="App">
           <Header />
           <Home />
-          {/* <Work /> */}
+          <Work />
           {/* <About /> */}
           {/* <Portfolio /> */}
           {/* <Contact /> */}

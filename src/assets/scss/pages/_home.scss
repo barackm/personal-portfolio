@@ -769,24 +769,6 @@
       width: 100%;
       margin-left: 3rem;
 
-      .home-hello-wrapper {
-        @include flexCenter(row);
-
-        justify-content: flex-start;
-
-        .hello-line {
-          width: 2.5rem;
-          height: 2px;
-          background-color: $primary;
-          margin-right: 0.5rem;
-        }
-
-        .hero-hello {
-          color: $primary;
-          margin: 0;
-        }
-      }
-
       .hero-text-wrapper {
         font-size: 2.2rem;
         color: $white;

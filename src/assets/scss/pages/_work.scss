@@ -216,3 +216,70 @@
 //     }
 //   }
 // }
+
+.what-i-do-main-container {
+  border-top: $border;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 3rem;
+  width: 100%;
+
+  .left-area-coontainer {
+    order: 2;
+    width: 100%;
+
+    @include flexCenter(column);
+
+    .mobile-website-wrapper {
+      @include flexCenter(column);
+    }
+
+    .web-app-wrapper {
+      @include flexCenter(column);
+
+      width: 100%;
+    }
+
+    .work-item-wrapper {
+      @include flexCenter(row);
+
+      background-color: $blueLighter;
+      justify-content: flex-start;
+      width: 15rem;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border-radius: 0.6rem;
+
+      .icon-wrapper {
+        margin-right: 1rem;
+      }
+
+      .text-wrapper {
+        color: $white;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .right-area-main-container {
+    order: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .slogan {
+      color: $white;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .about-work {
+      color: $lightBlue;
+      margin: 1rem 0;
+      font-size: 0.8rem;
+      line-height: 1.2;
+    }
+  }
+}
