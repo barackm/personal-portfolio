@@ -792,6 +792,7 @@ li:hover ~ .cursor1 {
   margin-top: 1rem;
   line-height: 1;
   width: 70%;
+  text-transform: uppercase;
 }
 
 .home-page-main-container .home-content-wrapper .home-text-content .profession-area .hero-profession {
