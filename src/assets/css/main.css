@@ -1106,7 +1106,7 @@ li:hover ~ .cursor1 {
 
 .about-page-main-container .right-area-main-container .languages-title {
   color: #f5f3f3;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   position: relative;
   margin: 1rem 0;
@@ -1428,7 +1428,7 @@ li:hover ~ .cursor1 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   color: #808dad;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .contact-page-main-container .contact-page-wrapper .contact-details-wrapper .contact-address-wrapper ul li a .address-icon-wrapper {
