@@ -113,4 +113,106 @@
       font-size: 1.6rem;
     }
   }
+
+  @include media(1024px) {
+    .left-area-coontainer {
+      margin-left: 5rem;
+    }
+
+    .right-area-main-container {
+      margin-right: 5rem;
+      padding-left: 5rem;
+    }
+  }
+
+  @include media(900px) {
+    .left-area-coontainer {
+      margin-left: 5rem;
+      flex-direction: column;
+
+      .web-app-wrapper {
+        .work-item-wrapper.backend {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .right-area-main-container {
+      margin-right: 5rem;
+      padding-left: 5rem;
+    }
+  }
+
+  @include media(750px) {
+    .left-area-coontainer {
+      margin-left: 5rem;
+      flex-direction: column;
+
+      .web-app-wrapper {
+        .work-item-wrapper.backend {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .right-area-main-container {
+      margin-right: 5rem;
+      padding-left: 5rem;
+
+      .slogan {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @include media(750px) {
+    flex-direction: column;
+
+    .right-area-main-container {
+      order: 1;
+    }
+
+    .left-area-coontainer {
+      order: 2;
+      flex-direction: row;
+
+      .web-app-wrapper {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+.home-hello-wrapper {
+  @include flexCenter(row);
+
+  justify-content: flex-start;
+
+  .hello-line {
+    width: 3rem;
+    height: 0.1rem;
+    background-color: $primary;
+  }
+
+  .hero-hello {
+    color: $primary;
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  @include media(768px) {
+    justify-content: flex-start;
+
+    .hello-line {
+      width: 3rem;
+      height: 0.1rem;
+      background-color: $primary;
+    }
+
+    .hero-hello {
+      color: $primary;
+      margin-left: 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
 }

@@ -13,10 +13,10 @@ class Header extends Component {
   }
   state = {
     links: [
-      { id: 1, name: "Work", to: "/work", class: "" },
-      { id: 2, name: "Services", to: "/services", class: "" },
-      { id: 3, name: "About", to: "about", class: "" },
-      { id: 4, name: "Blog", to: "blog", class: "" },
+      { id: 1, name: "Home", to: "/home", class: "" },
+      { id: 2, name: "About", to: "/about", class: "" },
+      { id: 3, name: "Services", to: "/services", class: "" },
+      { id: 4, name: "Portfolio", to: "/portfolio", class: "" },
       { id: 5, name: "contact", to: "contact", class: "" },
     ],
   };
@@ -67,7 +67,7 @@ class Header extends Component {
       <header>
         <nav className="header-main-container" ref={this.menu}>
           <div className="logo-container">
-            <div className="logo-area">
+            <a href="#f" className="logo-area">
               <svg
                 className="logo-wrapper"
                 viewBox="0 0 157 149"
@@ -111,7 +111,7 @@ class Header extends Component {
                   </clipPath>
                 </defs>
               </svg>
-            </div>
+            </a>
           </div>
           <div className="hamburger-container">
             <div className="hamburger-area" onClick={this.handleShowLinks}>
@@ -152,35 +152,44 @@ class Header extends Component {
             </div>
             <div className="contact-details-icon-wrapper">
               <div className="contact-icon-item">
-                <a href="#1">
+                <a
+                  href="https://www.facebook.com/freddy.fumba.7/"
+                  target="blank"
+                >
                   <IconContext.Provider
                     value={{ className: "header-links-icon" }}
                   >
                     <FaFacebookF />
                   </IconContext.Provider>
                 </a>
-                <a href="#1">
+                <a href="https://twitter.com/BarackMukelenga" target="blank">
                   <IconContext.Provider
                     value={{ className: "header-links-icon" }}
                   >
                     <FaTwitter />
                   </IconContext.Provider>
                 </a>
-                <a href="#1">
+                <a
+                  href="https://www.instagram.com/barackmukelenga/"
+                  target="blank"
+                >
                   <IconContext.Provider
                     value={{ className: "header-links-icon" }}
                   >
                     <FaInstagram />
                   </IconContext.Provider>
                 </a>
-                <a href="#1">
+                <a
+                  href="https://www.linkedin.com/in/baraka-mukelenga/"
+                  target="blank"
+                >
                   <IconContext.Provider
                     value={{ className: "header-links-icon" }}
                   >
                     <AiFillLinkedin />
                   </IconContext.Provider>
                 </a>
-                <a href="#1">
+                <a href="https://github.com/barackm" target="blank">
                   <IconContext.Provider
                     value={{ className: "header-links-icon" }}
                   >
