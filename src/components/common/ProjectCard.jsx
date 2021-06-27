@@ -10,7 +10,7 @@ export default class ProjectCard extends Component {
             Lorem ipsum dolor sit amet. Lorem, ipsum dolor.
           </p>
           <div className="project-technology-tags">
-            <div className="project-tag">HTML</div>
+            <div className="project-tag">HTML </div>
             <div className="project-tag">CSS</div>
             <div className="project-tag">JAVASCRIPT</div>
           </div>
