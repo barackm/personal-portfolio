@@ -118,3 +118,76 @@
 //     background-color: $primary;
 //   }
 // }
+
+.portfolio-main-container {
+  @include flexCenter(row);
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: $border;
+  width: 100%;
+
+  .portfolio-wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 100%;
+
+    .portfolio-works-wrapper {
+      width: 100%;
+
+      .links-wrapper {
+        @include flexCenter(column);
+
+        align-items: flex-start;
+
+        h3 {
+          color: $white;
+        }
+
+        ul {
+          @include flexCenter(row);
+
+          justify-content: flex-start;
+          padding: 0;
+          overflow-x: auto;
+
+          li {
+            margin-right: 1rem;
+
+            a {
+              color: $lightBlue;
+              font-size: 1rem;
+              font-weight: bold;
+
+              &:hover {
+                color: $primary;
+              }
+
+              &.active {
+                color: $primary;
+                position: relative;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  width: 30%;
+                  height: 2px;
+                  background-color: $primary;
+                  left: 0;
+                  bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .projects-grid-wrapper {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+      }
+    }
+  }
+}

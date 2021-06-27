@@ -1243,6 +1243,118 @@ li:hover ~ .cursor1 {
   stroke: rgba(237, 74, 74, 0.3);
 }
 
+.portfolio-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid rgba(128, 141, 173, 0.2);
+  width: 100%;
+}
+
+.portfolio-main-container .portfolio-wrapper {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100%;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper {
+  width: 100%;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper h3 {
+  color: #f5f3f3;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  overflow-x: auto;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li {
+  margin-right: 1rem;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a {
+  color: #808dad;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a:hover {
+  color: #ed4a4a;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a.active {
+  color: #ed4a4a;
+  position: relative;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a.active::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  background-color: #ed4a4a;
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .projects-grid-wrapper {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
 .home-hello-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1341,5 +1453,101 @@ li:hover ~ .cursor1 {
   font-size: 1.3rem;
   -webkit-transform: translateY(0.2rem);
           transform: translateY(0.2rem);
+}
+
+.project-item-wrapper {
+  background-color: rgba(128, 141, 173, 0.1);
+  border-radius: 0.7rem;
+  padding: 2rem 1rem;
+  cursor: pointer;
+}
+
+.project-item-wrapper .project-title {
+  margin: 0;
+  font-weight: bold;
+  color: #ed4a4a;
+  font-size: 1rem;
+}
+
+.project-item-wrapper .project-details {
+  color: #808dad;
+}
+
+.project-item-wrapper .project-technology-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-item-wrapper .project-technology-tags .project-tag {
+  background-color: rgba(128, 141, 173, 0.4);
+  color: #808dad;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.project-item-wrapper .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-item-wrapper .project-links a {
+  color: #f5f3f3;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-item-wrapper .project-links a:hover {
+  color: #ed4a4a;
+}
+
+.project-item-wrapper .project-links a .project-link {
+  color: #ed4a4a;
+}
+
+.project-item-wrapper .project-images-preview {
+  width: 100%;
+  margin-top: 1.5rem;
+  height: 11rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.project-item-wrapper .project-images-preview img {
+  max-width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

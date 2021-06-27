@@ -4,7 +4,7 @@ import "./assets/css/main.css";
 import Home from "./components/Home";
 import Work from "./components/Work";
 import About from "./components/About";
-// import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio";
 // import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
 
@@ -27,7 +27,7 @@ class App extends React.Component {
           <Home />
           <Work />
           <About />
-          {/* <Portfolio /> */}
+          <Portfolio />
           {/* <Contact /> */}
           {/* <Footer /> */}
         </main>
