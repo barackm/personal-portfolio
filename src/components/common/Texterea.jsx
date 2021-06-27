@@ -5,13 +5,9 @@ export default function Texterea({ name, placeholder, error }) {
     <div className="textarea-input-main-container">
       <div className="input-wrapper">
         <div className="textarea">
-          <textarea
-            name={name}
-            id="textarea"
-            placeholder={placeholder}
-          ></textarea>
+          <textarea name={name} id={name} placeholder={placeholder}></textarea>
         </div>
-        {error && <span className="input-error-massage">{error}</span>}
+        {error && <span className="input-error-massage">{error.message}</span>}
       </div>
     </div>
   );
