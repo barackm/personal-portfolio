@@ -30,7 +30,10 @@ export default class Footer extends Component {
           <div className="footer-down">
             <p>
               &copy; {new Date().getFullYear()}{" "}
-              <a href="#f" className="name">
+              <a
+                href="https://www.linkedin.com/in/baraka-mukelenga/"
+                className="name"
+              >
                 Baraka Mukelenga
               </a>
               , All right reserved

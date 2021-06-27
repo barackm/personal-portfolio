@@ -221,3 +221,30 @@
     }
   }
 }
+
+.redirect-form-contact {
+  @include flexCenter(column);
+
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.form-submission-message {
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.show-form-btn {
+  color: $lightBlue;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+
+  .show-contact-form {
+    margin: 0 0.5rem;
+    color: $primary;
+    cursor: pointer;
+    display: inline;
+  }
+}

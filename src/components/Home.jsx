@@ -15,11 +15,11 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home-page-main-container">
-        <div className="background-image"></div>
+        {/* <div className="background-image"></div> */}
         <div className="aside-links-wrapper">
           <ul>
             <li>
-              <a href="#f">
+              <a href="https://www.facebook.com/freddy.fumba.7/" target="blank">
                 <IconContext.Provider
                   value={{ className: "sidebar-link-icon" }}
                 >
@@ -28,7 +28,10 @@ export default class Home extends Component {
               </a>
             </li>
             <li>
-              <a href="#f">
+              <a
+                href="https://www.instagram.com/barackmukelenga/"
+                target="blank"
+              >
                 <IconContext.Provider
                   value={{ className: "sidebar-link-icon" }}
                 >
@@ -37,7 +40,7 @@ export default class Home extends Component {
               </a>
             </li>
             <li>
-              <a href="#f">
+              <a href="https://github.com/barackm" target="blank">
                 <IconContext.Provider
                   value={{ className: "sidebar-link-icon" }}
                 >
@@ -46,7 +49,7 @@ export default class Home extends Component {
               </a>
             </li>
             <li>
-              <a href="#f">
+              <a href="https://twitter.com/BarackMukelenga" target="blank">
                 <IconContext.Provider
                   value={{ className: "sidebar-link-icon" }}
                 >
@@ -55,7 +58,10 @@ export default class Home extends Component {
               </a>
             </li>
             <li>
-              <a href="#f">
+              <a
+                href="https://www.linkedin.com/in/baraka-mukelenga/"
+                target="blank"
+              >
                 <IconContext.Provider
                   value={{ className: "sidebar-link-icon" }}
                 >
