@@ -89,6 +89,8 @@
 
       .links-pages {
         li {
+          margin: 0.5rem 0;
+
           a {
             color: $lightBlue;
             font-weight: bold;
@@ -129,7 +131,7 @@
       p {
         color: $lightBlue;
         margin: 0;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
 
         .name {
           color: $lightBlue;

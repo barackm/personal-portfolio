@@ -1611,6 +1611,10 @@ li:hover ~ .cursor1 {
   padding: 0;
 }
 
+.footer-main-container .footer-content-container .footer-up .links-pages li {
+  margin: 0.5rem 0;
+}
+
 .footer-main-container .footer-content-container .footer-up .links-pages li a {
   color: #808dad;
   font-weight: bold;
@@ -1671,7 +1675,7 @@ li:hover ~ .cursor1 {
 .footer-main-container .footer-content-container .footer-down p {
   color: #808dad;
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .footer-main-container .footer-content-container .footer-down p .name {
