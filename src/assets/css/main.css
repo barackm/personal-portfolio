@@ -1674,11 +1674,11 @@ li:hover ~ .cursor1 {
   font-size: 0.7rem;
 }
 
-.footer-main-container .footer-content-container .footer-down p a {
+.footer-main-container .footer-content-container .footer-down p .name {
   color: #808dad;
 }
 
-.footer-main-container .footer-content-container .footer-down p a:hover {
+.footer-main-container .footer-content-container .footer-down p .name:hover {
   color: #ed4a4a;
 }
 
