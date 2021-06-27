@@ -68,7 +68,7 @@ export default class Work extends Component {
                   />
                 </svg>
               </div>
-              <div className="text-wrapper">Mobile App Design</div>
+              <div className="text-wrapper">Mobile design</div>
             </div>
             <div className="work-item-wrapper">
               <div className="icon-wrapper">
