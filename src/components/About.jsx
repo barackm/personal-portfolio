@@ -58,6 +58,14 @@ export default class About extends Component {
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
+              <h3>NodeJS</h3>
+            </div>
+            <div className="work-about-item-wrapper">
+              <div className="check-icon">
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
               <h3>ReactJS</h3>
             </div>
             <div className="work-about-item-wrapper">

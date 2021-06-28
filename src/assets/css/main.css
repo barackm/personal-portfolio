@@ -783,13 +783,17 @@ li:hover ~ .cursor1 {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper {
-  width: 90%;
   background-color: rgba(131, 144, 175, 0.2);
   border-radius: 0.6rem;
   height: 14rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,6 +987,127 @@ li:hover ~ .cursor1 {
   font-weight: bold;
 }
 
+@media screen and (min-width: 480px) {
+  .home-page-main-container .home-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .home-page-main-container .home-content-wrapper .home-text-content .hero-text-wrapper {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-page-main-container .home-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .home-page-main-container .home-content-wrapper .home-text-content {
+    margin-left: 4rem;
+  }
+  .home-page-main-container .home-content-wrapper .home-text-content .hero-text-wrapper {
+    font-size: 2.8rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper {
+    margin-right: 4rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper {
+    margin: 0;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance {
+    right: -1rem;
+  }
+  .home-page-main-container .aside-links-wrapper {
+    top: 20rem;
+    right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page-main-container .home-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .home-page-main-container .home-content-wrapper .home-text-content {
+    margin-left: 8rem;
+    padding-top: 7rem;
+  }
+  .home-page-main-container .home-content-wrapper .home-text-content .hero-text-wrapper {
+    font-size: 4.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper {
+    margin-right: 8rem;
+    padding-top: 3rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper {
+    margin: 0;
+    margin-left: 1rem;
+    height: 23rem;
+    width: 29rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance {
+    right: -1rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .experiance-text h5 {
+    font-size: 0.9rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .play-icon-wrapper {
+    width: 5rem;
+    height: 5rem;
+    left: -2rem;
+    bottom: -2rem;
+  }
+  .home-page-main-container .aside-links-wrapper {
+    top: 18rem;
+    right: 1.5rem;
+  }
+  .home-page-main-container .aside-links-wrapper ul li {
+    margin-bottom: 1.3rem;
+  }
+  .home-page-main-container .aside-links-wrapper .sidebar-link-icon {
+    width: auto;
+    font-size: 1.4rem;
+  }
+}
+
 .what-i-do-main-container {
   border-top: 1px solid rgba(128, 141, 173, 0.2);
   padding-top: 3rem;
@@ -1071,18 +1196,37 @@ li:hover ~ .cursor1 {
           justify-content: flex-start;
   width: 15rem;
   margin-bottom: 1rem;
-  padding: 0.8rem;
+  padding: 1rem;
   border-radius: 0.6rem;
 }
 
 .what-i-do-main-container .left-area-coontainer .work-item-wrapper .icon-wrapper {
   margin-right: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .what-i-do-main-container .left-area-coontainer .work-item-wrapper .text-wrapper {
   color: #f5f3f3;
   font-weight: bold;
   font-size: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .what-i-do-main-container .right-area-main-container {
@@ -1109,7 +1253,7 @@ li:hover ~ .cursor1 {
   font-size: 1.1rem;
   text-transform: uppercase;
   position: relative;
-  margin: 1rem 0;
+  margin: 2rem 0;
   font-weight: bold;
 }
 
@@ -1719,6 +1863,15 @@ li:hover ~ .cursor1 {
 .home-hello-wrapper .hero-hello {
   color: #ed4a4a;
   margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .home-hello-wrapper .hello-line {
+    width: 3.5rem;
+  }
+  .home-hello-wrapper .hero-hello {
+    font-size: 2.5rem;
+  }
 }
 
 .slogan {

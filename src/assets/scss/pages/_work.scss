@@ -249,17 +249,21 @@
       justify-content: flex-start;
       width: 15rem;
       margin-bottom: 1rem;
-      padding: 0.8rem;
+      padding: 1rem;
       border-radius: 0.6rem;
 
       .icon-wrapper {
         margin-right: 1rem;
+        flex: 1;
+
+        @include flexCenter(row);
       }
 
       .text-wrapper {
         color: $white;
         font-weight: bold;
         font-size: 1rem;
+        flex: 1;
       }
     }
   }
