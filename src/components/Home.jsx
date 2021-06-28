@@ -10,6 +10,7 @@ import {
   FiLinkedin,
 } from "react-icons/fi";
 import barack from "../assets/images/project2.png";
+import resume from "../assets/Baraka-mukelenga-Resume.pdf";
 
 export default class Home extends Component {
   render() {
@@ -85,7 +86,7 @@ export default class Home extends Component {
               <a href="#home" className="hire-me-btn">
                 Hire Me
               </a>
-              <a href="#home" className="download-cv-btn">
+              <a href={resume} download className="download-cv-btn">
                 Download CV{" "}
                 <IconContext.Provider value={{ className: "download-icon" }}>
                   <BiDownload />
