@@ -25,6 +25,7 @@ body {
   background-color: #0e1630;
   width: 100%;
   font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -1997,6 +1998,10 @@ li:hover ~ .cursor1 {
   color: #808dad;
 }
 
+.contact-page-main-container .contact-page-wrapper .contact-details-wrapper .contact-links-wrapper ul li a .contact-link-icon:hover {
+  color: #ed4a4a;
+}
+
 .contact-page-main-container .contact-page-wrapper .contact-form-wrapper {
   margin-left: 2rem;
   padding-top: 2rem;
@@ -2057,6 +2062,63 @@ li:hover ~ .cursor1 {
   color: #ed4a4a;
   cursor: pointer;
   display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page-main-container .contact-page-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-page-main-container .contact-page-wrapper .contact-details-wrapper {
+    margin-left: 4rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .contact-page-main-container .contact-page-wrapper .contact-form-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-page-main-container .contact-page-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-page-main-container .contact-page-wrapper .contact-details-wrapper {
+    margin-left: 8rem;
+  }
+  .contact-page-main-container .contact-page-wrapper .contact-form-wrapper {
+    margin-right: 8rem;
+  }
 }
 
 .footer-main-container {

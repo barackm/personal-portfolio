@@ -236,6 +236,10 @@
               .contact-link-icon {
                 font-size: 1.3rem;
                 color: $lightBlue;
+
+                &:hover {
+                  color: $primary;
+                }
               }
             }
           }
@@ -281,6 +285,37 @@
       color: $primary;
       cursor: pointer;
       display: inline;
+    }
+  }
+
+  @include min-width($tablet) {
+    .contact-page-wrapper {
+      @include flexCenter(row);
+
+      .contact-details-wrapper {
+        margin-left: 4rem;
+        flex: 1;
+      }
+
+      .contact-form-wrapper {
+        justify-content: flex-start;
+        flex: 1;
+        margin-right: 4rem;
+      }
+    }
+  }
+
+  @include min-width($desktop) {
+    .contact-page-wrapper {
+      @include flexCenter(row);
+
+      .contact-details-wrapper {
+        margin-left: 8rem;
+      }
+
+      .contact-form-wrapper {
+        margin-right: 8rem;
+      }
     }
   }
 }
