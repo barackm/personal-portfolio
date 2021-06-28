@@ -15,6 +15,16 @@
     margin: 0;
   }
 
+  @include min-width($tablet) {
+    .hello-line {
+      width: 2.5rem;
+    }
+
+    .hero-hello {
+      font-size: 1.7rem;
+    }
+  }
+
   @include min-width($desktop) {
     .hello-line {
       width: 3.5rem;
@@ -37,6 +47,10 @@
   margin: 1rem 0;
   font-size: 0.8rem;
   line-height: 1.2;
+
+  @include min-width($desktop) {
+    font-size: 1.6rem;
+  }
 }
 
 .btn-wrapper {

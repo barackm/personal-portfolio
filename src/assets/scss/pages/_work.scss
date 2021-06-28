@@ -232,16 +232,6 @@
 
     @include flexCenter(column);
 
-    .mobile-website-wrapper {
-      @include flexCenter(column);
-    }
-
-    .web-app-wrapper {
-      @include flexCenter(column);
-
-      width: 100%;
-    }
-
     .work-item-wrapper {
       @include flexCenter(row);
 
@@ -250,13 +240,17 @@
       width: 15rem;
       margin-bottom: 1rem;
       padding: 1rem;
-      border-radius: 0.6rem;
 
       .icon-wrapper {
         margin-right: 1rem;
         flex: 1;
 
         @include flexCenter(row);
+
+        .web-img {
+          width: 6rem;
+          height: 6.5rem;
+        }
       }
 
       .text-wrapper {
@@ -264,6 +258,36 @@
         font-weight: bold;
         font-size: 1rem;
         flex: 1;
+      }
+    }
+
+    .web-app-wrapper {
+      @include flexCenter(column);
+
+      width: 100%;
+
+      .work-item-wrapper {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+      }
+    }
+
+    .mobile-website-wrapper {
+      @include flexCenter(column);
+
+      .work-item-wrapper {
+        &:first-child {
+          border-top-left-radius: 2rem;
+          border-bottom-left-radius: 2rem;
+          border-bottom-right-radius: 2rem;
+        }
+
+        &:last-child {
+          border-top-left-radius: 2rem;
+          border-bottom-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+        }
       }
     }
   }
@@ -277,6 +301,75 @@
   @include min-width($mobile) {
     .left-area-coontainer {
       margin-top: 2rem;
+    }
+  }
+
+  @include min-width($tablet) {
+    flex-direction: row;
+    align-items: center;
+
+    .left-area-coontainer {
+      order: 1;
+      // width: 60%;
+      margin-left: 4rem;
+      flex-direction: row;
+
+      .web-app-wrapper {
+        margin-left: 1rem;
+      }
+
+      .work-item-wrapper {
+        width: 9rem;
+
+        @include spaceBetween(row);
+
+        .icon-wrapper {
+          margin-right: 0;
+          justify-content: center;
+
+          .mobile-icon {
+            height: 3rem;
+          }
+        }
+
+        .text-wrapper {
+          flex: 1;
+        }
+      }
+    }
+
+    .right-area-main-container {
+      order: 2;
+      // flex: 1;
+      margin-right: 4rem;
+    }
+  }
+
+  @include min-width($desktop) {
+    .left-area-coontainer {
+      margin-left: 8rem;
+
+      .work-item-wrapper {
+        width: 13rem;
+
+        .icon-wrapper {
+          .mobile-icon {
+            height: 7rem;
+          }
+        }
+
+        .text-wrapper {
+          margin-left: 1rem;
+        }
+      }
+
+      .mobile-website-wrapper {
+        .work-item-wrapper {
+          &:first-child {
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
     }
   }
 }
