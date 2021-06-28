@@ -1612,7 +1612,7 @@ li:hover ~ .cursor1 {
 }
 
 .footer-main-container .footer-content-container .footer-up .links-pages li {
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 }
 
 .footer-main-container .footer-content-container .footer-up .links-pages li a {
@@ -1650,7 +1650,7 @@ li:hover ~ .cursor1 {
 .footer-main-container .footer-content-container .footer-up .contact-links-wrapper ul li .contact-link-icon {
   width: auto;
   color: #808dad;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .footer-main-container .footer-content-container .footer-down {
@@ -1675,7 +1675,7 @@ li:hover ~ .cursor1 {
 .footer-main-container .footer-content-container .footer-down p {
   color: #808dad;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .footer-main-container .footer-content-container .footer-down p .name {
