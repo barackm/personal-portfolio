@@ -273,4 +273,10 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  @include min-width($mobile) {
+    .left-area-coontainer {
+      margin-top: 2rem;
+    }
+  }
 }

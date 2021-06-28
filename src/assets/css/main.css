@@ -714,7 +714,7 @@ li:hover ~ .cursor1 {
 
 .home-page-main-container .aside-links-wrapper {
   position: absolute;
-  right: 0;
+  right: 0.5rem;
   top: 10rem;
 }
 
@@ -724,6 +724,10 @@ li:hover ~ .cursor1 {
 
 .home-page-main-container .aside-links-wrapper ul li a {
   color: #808dad;
+}
+
+.home-page-main-container .aside-links-wrapper ul li a .sidebar-link-icon {
+  font-size: 1.4rem;
 }
 
 .home-page-main-container .aside-links-wrapper ul li a:hover {
@@ -1235,6 +1239,12 @@ li:hover ~ .cursor1 {
           order: 1;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media screen and (min-width: 480px) {
+  .what-i-do-main-container .left-area-coontainer {
+    margin-top: 2rem;
+  }
 }
 
 .about-page-main-container {

@@ -741,7 +741,7 @@
 
   .aside-links-wrapper {
     position: absolute;
-    right: 0;
+    right: 0.5rem;
     top: 10rem;
 
     ul {
@@ -750,6 +750,10 @@
 
         a {
           color: $lightBlue;
+
+          .sidebar-link-icon {
+            font-size: 1.4rem;
+          }
 
           &:hover {
             color: $primary;
