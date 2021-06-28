@@ -94,7 +94,7 @@ export default class Portfolio extends Component {
     ];
 
     return (
-      <div className="portfolio-main-container">
+      <div className="portfolio-main-container" id="portfolio">
         <div className="portfolio-wrapper">
           <div className="portfolio-header">
             <div className="home-hello-wrapper ">

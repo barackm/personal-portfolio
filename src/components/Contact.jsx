@@ -18,10 +18,9 @@ import Texterea from "./common/Texterea";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xyylpkll");
-  const [showForm, setShowBtn] = useState(false);
 
   const Message = () => (
-    <div className="contact-page-main-container">
+    <div className="contact-page-main-container" id="contact">
       <div className="contact-page-wrapper">
         <div className="contact-details-wrapper">
           <div className="home-hello-wrapper ">
@@ -141,10 +140,13 @@ export default function Contact() {
           </div>
           <div className="show-form-btn">
             Click
-            <div onClick={() => setShowBtn(true)} className="show-contact-form">
+            <div
+              onClick={() => window.location.reload()}
+              className="show-contact-form"
+            >
               here
             </div>
-            to show the contact form again. <span>{showForm}</span>
+            to show the contact form again.
           </div>
         </div>
       </div>
@@ -155,7 +157,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="contact-page-main-container">
+    <div className="contact-page-main-container" id="contact">
       <div className="contact-page-wrapper">
         <div className="contact-details-wrapper">
           <div className="home-hello-wrapper ">

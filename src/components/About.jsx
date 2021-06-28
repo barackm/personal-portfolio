@@ -79,7 +79,7 @@ export default class About extends Component {
             </div>
           </div>
           <div className="btn-wrapper about">
-            <a href="#home" className="hire-me-btn">
+            <a href="#portfolio" className="hire-me-btn">
               My portfolio
             </a>
             <a href={resume} download className="download-cv-btn">

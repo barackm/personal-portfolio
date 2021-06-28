@@ -83,7 +83,7 @@ export default class Home extends Component {
               <h3 className="hero-profession">Full-stack web developper</h3>
             </div>
             <div className="btn-wrapper">
-              <a href="#home" className="hire-me-btn">
+              <a href="#contact" className="hire-me-btn">
                 Hire Me
               </a>
               <a href={resume} download className="download-cv-btn">
