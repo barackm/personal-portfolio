@@ -3,6 +3,7 @@ import { IconContext } from "react-icons";
 import { BiDownload } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
 import project from "../assets/images/project1.png";
+import resume from "../assets/Baraka-mukelenga-Resume.pdf";
 
 export default class About extends Component {
   render() {
@@ -81,7 +82,7 @@ export default class About extends Component {
             <a href="#home" className="hire-me-btn">
               My portfolio
             </a>
-            <a href="#home" className="download-cv-btn">
+            <a href={resume} download className="download-cv-btn">
               Download CV{" "}
               <IconContext.Provider value={{ className: "download-icon" }}>
                 <BiDownload />

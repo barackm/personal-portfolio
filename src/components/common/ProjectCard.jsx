@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { IconContext } from "react-icons";
 import { FiExternalLink } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
+import truncateStr from "../utils/truncateStr";
 
 export default class ProjectCard extends Component {
   render() {
@@ -9,18 +10,18 @@ export default class ProjectCard extends Component {
     return (
       <>
         <div href="#f" className="project-item-wrapper">
-          <h3 className="project-title">Web UI-UX Design</h3>
+          <h3 className="project-title">{project.title}</h3>
           <p className="project-details">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor.
+            {truncateStr(project.description, 100)}
           </p>
           <div className="project-links">
-            <a href="#1">
+            <a href={project.demoLink} target="blank">
               Live Demo{" "}
               <IconContext.Provider value={{ className: "project-link" }}>
                 <FiExternalLink />
               </IconContext.Provider>
             </a>
-            <a href="#1">
+            <a href={project.sourceCodeLink} target="blank">
               Source code
               <IconContext.Provider value={{ className: "project-link" }}>
                 <AiFillGithub />
@@ -28,9 +29,11 @@ export default class ProjectCard extends Component {
             </a>
           </div>
           <div className="project-technology-tags">
-            <div className="project-tag">HTML </div>
-            <div className="project-tag">CSS</div>
-            <div className="project-tag">JAVASCRIPT</div>
+            {project.technologies.map((techno) => (
+              <div key={techno.id} className="project-tag">
+                {techno.name}
+              </div>
+            ))}
           </div>
           <div className="project-images-preview">
             <img src={project.image} alt="" />
