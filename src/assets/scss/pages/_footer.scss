@@ -102,6 +102,10 @@
             &.active {
               color: $primary;
             }
+
+            &:hover {
+              color: $primary;
+            }
           }
         }
       }
@@ -119,6 +123,10 @@
               width: auto;
               color: $lightBlue;
               font-size: 1.2rem;
+
+              &:hover {
+                color: $primary;
+              }
             }
           }
         }
@@ -145,6 +153,30 @@
           }
         }
       }
+    }
+  }
+
+  @include min-width($tablet) {
+    .links-pages {
+      li {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .contact-links-wrapper {
+      li {
+        margin-right: 1.5rem !important;
+
+        .contact-link-icon {
+          font-size: 1.9rem !important;
+        }
+      }
+    }
+
+    .footer-down {
+      padding: 1rem 0 !important;
     }
   }
 }

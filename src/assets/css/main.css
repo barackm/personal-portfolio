@@ -2184,6 +2184,10 @@ li:hover ~ .cursor1 {
   color: #ed4a4a;
 }
 
+.footer-main-container .footer-content-container .footer-up .links-pages li a:hover {
+  color: #ed4a4a;
+}
+
 .footer-main-container .footer-content-container .footer-up .contact-links-wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2211,6 +2215,10 @@ li:hover ~ .cursor1 {
   width: auto;
   color: #808dad;
   font-size: 1.2rem;
+}
+
+.footer-main-container .footer-content-container .footer-up .contact-links-wrapper ul li .contact-link-icon:hover {
+  color: #ed4a4a;
 }
 
 .footer-main-container .footer-content-container .footer-down {
@@ -2244,6 +2252,21 @@ li:hover ~ .cursor1 {
 
 .footer-main-container .footer-content-container .footer-down p .name:hover {
   color: #ed4a4a;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-main-container .links-pages li a {
+    font-size: 1.5rem;
+  }
+  .footer-main-container .contact-links-wrapper li {
+    margin-right: 1.5rem !important;
+  }
+  .footer-main-container .contact-links-wrapper li .contact-link-icon {
+    font-size: 1.9rem !important;
+  }
+  .footer-main-container .footer-down {
+    padding: 1rem 0 !important;
+  }
 }
 
 .home-hello-wrapper {
