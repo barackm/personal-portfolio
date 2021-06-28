@@ -89,7 +89,9 @@
 
       .links-pages {
         li {
-          margin: 0.8rem 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
 
           a {
             color: $lightBlue;
