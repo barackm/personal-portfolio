@@ -19,7 +19,7 @@ This website was designed with the tools below:
 
 **If you want to know more about how this website was designed, You can run the folowing commands in your terminal if you have git already install on your computer.**
 
-`git clone https://github.com/barackm/Niky/`
+`git clone https://github.com/barackm/personal-portfolio`
 
 To track all the linter errors you can run the following command at the root of your project if you have NPM installed on your computer.
 
