@@ -12,6 +12,7 @@ export default class Portfolio extends Component {
       { id: 5, image: project1 },
       { id: 6, image: project1 },
     ];
+
     return (
       <div className="portfolio-main-container">
         <div className="portfolio-wrapper">

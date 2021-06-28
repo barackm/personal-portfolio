@@ -190,4 +190,55 @@
       }
     }
   }
+
+  @include min-width($tablet) {
+    .portfolio-wrapper {
+      margin-left: 4rem;
+      margin-right: 4rem;
+
+      .portfolio-works-wrapper {
+        .projects-grid-wrapper {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @include min-width($desktop) {
+    .portfolio-wrapper {
+      margin-left: 8rem;
+      margin-right: 8rem;
+
+      .portfolio-works-wrapper {
+        .links-wrapper {
+          @include flexCenter(column);
+
+          align-items: flex-start;
+          margin: 2rem 0;
+
+          h3 {
+            color: $white;
+          }
+
+          ul {
+            li {
+              margin-right: 1rem;
+
+              a {
+                color: $lightBlue;
+                font-size: 1.5rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .projects-grid-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 1.5rem;
+        }
+      }
+    }
+  }
 }

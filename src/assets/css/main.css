@@ -1156,6 +1156,13 @@ li:hover ~ .cursor1 {
   .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance {
     right: -1rem;
   }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .dots-svg {
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    width: 6rem;
+    height: 6rem;
+  }
   .home-page-main-container .aside-links-wrapper {
     top: 20rem;
     right: 0.5rem;
@@ -1203,6 +1210,13 @@ li:hover ~ .cursor1 {
   }
   .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .years-of-experiance .experiance-text h5 {
     font-size: 0.9rem;
+  }
+  .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .dots-svg {
+    position: absolute;
+    top: -2.5rem;
+    right: -2.5rem;
+    width: 8rem;
+    height: 8rem;
   }
   .home-page-main-container .home-content-wrapper .image-content-wrapper .image-wrapper .play-icon-wrapper {
     width: 5rem;
@@ -1425,6 +1439,10 @@ li:hover ~ .cursor1 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .what-i-do-main-container .left-area-coontainer .work-item-wrapper .icon-wrapper .web-img {
+    width: 3rem;
+    height: 3.5rem;
+  }
   .what-i-do-main-container .left-area-coontainer .work-item-wrapper .icon-wrapper .mobile-icon {
     height: 3rem;
   }
@@ -1450,6 +1468,10 @@ li:hover ~ .cursor1 {
   }
   .what-i-do-main-container .left-area-coontainer .work-item-wrapper .icon-wrapper .mobile-icon {
     height: 7rem;
+  }
+  .what-i-do-main-container .left-area-coontainer .work-item-wrapper .icon-wrapper .web-img {
+    width: 6rem;
+    height: 6.5rem;
   }
   .what-i-do-main-container .left-area-coontainer .work-item-wrapper .text-wrapper {
     margin-left: 1rem;
@@ -1567,9 +1589,8 @@ li:hover ~ .cursor1 {
 }
 
 .about-page-main-container .right-about-page-area .image-container {
-  width: 90%;
   height: 10rem;
-  background-color: rgba(131, 144, 175, 0.2);
+  background-color: #1a2857;
   border-radius: 0.4rem;
   position: relative;
   display: -webkit-box;
@@ -1607,6 +1628,59 @@ li:hover ~ .cursor1 {
 .about-page-main-container .right-about-page-area .image-container .dots-svg.about path {
   fill: rgba(237, 74, 74, 0.3);
   stroke: rgba(237, 74, 74, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .about-page-main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-page-main-container .right-area-main-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 4rem;
+  }
+  .about-page-main-container .right-area-main-container .about-work-details-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about-page-main-container .right-about-page-area {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 4rem;
+  }
+  .about-page-main-container .right-about-page-area .image-container {
+    height: 14rem;
+  }
+  .about-page-main-container .right-about-page-area .image-container .dots-svg.about {
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-page-main-container .right-area-main-container {
+    margin-left: 8rem;
+  }
+  .about-page-main-container .right-about-page-area {
+    margin-right: 8rem;
+  }
 }
 
 .portfolio-main-container {
@@ -1719,6 +1793,60 @@ li:hover ~ .cursor1 {
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-main-container .portfolio-wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .projects-grid-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio-main-container .portfolio-wrapper {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 2rem 0;
+  }
+  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper h3 {
+    color: #f5f3f3;
+  }
+  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li {
+    margin-right: 1rem;
+  }
+  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a {
+    color: #808dad;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .projects-grid-wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
 }
 
 .contact-page-main-container {
@@ -2226,6 +2354,7 @@ li:hover ~ .cursor1 {
   font-size: 0.9rem;
   padding: 0.2rem 0.4rem;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   border-radius: 0.2rem;
 }
 
@@ -2275,6 +2404,30 @@ li:hover ~ .cursor1 {
 .project-item-wrapper .project-images-preview img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .project-item-wrapper .project-images-preview {
+    height: 18rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .project-item-wrapper .project-images-preview {
+    height: 22rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-item-wrapper .project-images-preview {
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-item-wrapper .project-images-preview {
+    height: 12rem;
+  }
 }
 
 .input-main-container {

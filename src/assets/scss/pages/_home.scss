@@ -957,6 +957,14 @@
           .years-of-experiance {
             right: -1rem;
           }
+
+          .dots-svg {
+            position: absolute;
+            top: -1.5rem;
+            right: -1.5rem;
+            width: 6rem;
+            height: 6rem;
+          }
         }
       }
     }
@@ -1004,6 +1012,14 @@
                 font-size: 0.9rem;
               }
             }
+          }
+
+          .dots-svg {
+            position: absolute;
+            top: -2.5rem;
+            right: -2.5rem;
+            width: 8rem;
+            height: 8rem;
           }
 
           .play-icon-wrapper {

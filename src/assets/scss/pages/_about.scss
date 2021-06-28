@@ -145,9 +145,9 @@
     @include flexCenter(row);
 
     .image-container {
-      width: 90%;
+      // width: 90%;
       height: 10rem;
-      background-color: $blueLighter;
+      background-color: lighten($blue, 10%);
       border-radius: 0.4rem;
       position: relative;
 
@@ -174,6 +174,46 @@
           stroke: rgba($primary, 0.3);
         }
       }
+    }
+  }
+
+  @include min-width($tablet) {
+    @include flexCenter(row);
+
+    .right-area-main-container {
+      flex: 1;
+      margin-left: 4rem;
+
+      .about-work-details-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .right-about-page-area {
+      flex: 1;
+      margin-right: 4rem;
+
+      .image-container {
+        height: 14rem;
+
+        .dots-svg.about {
+          position: absolute;
+          top: -1.5rem;
+          right: -1.5rem;
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+    }
+  }
+
+  @include min-width($desktop) {
+    .right-area-main-container {
+      margin-left: 8rem;
+    }
+
+    .right-about-page-area {
+      margin-right: 8rem;
     }
   }
 }

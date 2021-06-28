@@ -327,6 +327,11 @@
           margin-right: 0;
           justify-content: center;
 
+          .web-img {
+            width: 3rem;
+            height: 3.5rem;
+          }
+
           .mobile-icon {
             height: 3rem;
           }
@@ -355,6 +360,11 @@
         .icon-wrapper {
           .mobile-icon {
             height: 7rem;
+          }
+
+          .web-img {
+            width: 6rem;
+            height: 6.5rem;
           }
         }
 
