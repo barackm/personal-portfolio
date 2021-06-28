@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IconContext } from "react-icons/lib";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useForm } from "@formspree/react";
@@ -30,8 +30,8 @@ export default function Contact() {
           <h2 className="slogan">Let's do it together</h2>
 
           <p className="about-work">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-            explicabo totam deleniti tempore aliquid optio{" "}
+            Question, comment or concern? this contact form is the best way to
+            get in touch with me.
           </p>
 
           <div className="contact-address-wrapper">
@@ -167,8 +167,8 @@ export default function Contact() {
           <h2 className="slogan">Let's do it together</h2>
 
           <p className="about-work">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-            explicabo totam deleniti tempore aliquid optio{" "}
+            Question, comment or concern? this contact form is the best way to
+            get in touch with me.
           </p>
 
           <div className="contact-address-wrapper">

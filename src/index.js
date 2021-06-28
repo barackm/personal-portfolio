@@ -5,6 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import ScrollTop from "./components/ScrollTop";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_TRACKING_ID;
+ReactGA.initialize(TRACKING_ID);
 
 ReactDOM.render(
   <React.StrictMode>

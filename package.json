@@ -13,6 +13,7 @@
     "magnet-mouse": "fluffy-factory/magnet-mouse",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",

@@ -98,8 +98,8 @@ export default class Work extends Component {
           </h2>
 
           <p className="about-work">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-            explicabo totam deleniti tempore aliquid optio{" "}
+            I'm Building scalable web applications, Mobile apps and beautiful
+            websites for companies.
           </p>
         </div>
       </div>
