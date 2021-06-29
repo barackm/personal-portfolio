@@ -68,7 +68,7 @@ export default class Portfolio extends Component {
         title: "ULK Forum",
         description:
           "Forum where students should post their problems about projects or assignments to get idea from other students",
-        demoLink: "https://github.com/barackm/ULK-Forum",
+        demoLink: "https://ulk-forum.netlify.app/",
         sourceCodeLink: "https://github.com/barackm/ULK-Forum",
         technologies: [
           { id: 1, name: "Javascript" },
