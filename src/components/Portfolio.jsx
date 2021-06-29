@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import ProjectCard from "./common/ProjectCard";
-import project1 from "../assets/images/projects/project3.png";
+import project1 from "../assets/images/projects/project11.png";
 import project2 from "../assets/images/projects/project4.png";
-import project3 from "../assets/images/projects/project5.png";
+import project3 from "../assets/images/projects/project7.png";
 import project4 from "../assets/images/projects/project6.png";
-import project5 from "../assets/images/projects/project7.png";
-import project6 from "../assets/images/projects/project8.png";
+import project6 from "../assets/images/projects/project12.png";
+import project7 from "../assets/images/projects/project10.png";
 
 export default class Portfolio extends Component {
   render() {
@@ -39,6 +39,16 @@ export default class Portfolio extends Component {
         ],
       },
       {
+        id: 5,
+        image: project7,
+        title: "My Doctor",
+        description:
+          "My Doctor is a mobile app Designed for Hospitals, helping petients to be assisted by thier doctors online.",
+        demoLink: "https://github.com/barackm/Doctor-App",
+        sourceCodeLink: "https://github.com/barackm/Doctor-App",
+        technologies: [{ id: 1, name: "React Native" }],
+      },
+      {
         id: 6,
         image: project6,
         title: "Book Reviewer",
@@ -70,23 +80,9 @@ export default class Portfolio extends Component {
       {
         id: 3,
         image: project3,
-        title: "Niky",
+        title: "Raven Bot ",
         description:
-          "Niky is an online shop for fashion which sells different kinds of hats, shirts, shoes, and much more, Niky is the number 1 in this service, because it offers you the best quality of all its products and customers are always satisfied.",
-        demoLink: "https://niky.netlify.app",
-        sourceCodeLink: "https://github.com/barackm/Niky",
-        technologies: [
-          { id: 1, name: "HTML" },
-          { id: 2, name: "CSS" },
-          { id: 3, name: "SCSS" },
-        ],
-      },
-      {
-        id: 5,
-        image: project5,
-        title: "Raven Bot",
-        description:
-          "Raven Bot is a Ruby-based Bot used in restaurants, helping clients to place an order inside restaurants easily with some fun using their phones.",
+          "Raven Bot is a Ruby-based Bot used in restaurants, helping clients to place an order inside restaurents.          ",
         demoLink: "https://github.com/barackm/Niky-Restaurent-Bot",
         sourceCodeLink: "https://github.com/barackm/Niky-Restaurent-Bot",
         technologies: [{ id: 1, name: "Ruby" }],

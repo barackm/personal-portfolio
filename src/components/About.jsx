@@ -21,9 +21,9 @@ export default class About extends Component {
 
           <p className="about-work">
             I'm Baraka Mukelenga a software developer specialized in different
-            technologies ,Building web applications and beautiful websites for
-            companies. Love digging into hard problems, learning new languages
-            and technologies.
+            technologies ,Building web applications, Mobile apps and beautiful
+            websites for companies. Love digging into hard problems, learning
+            new languages and technologies.
           </p>
           <h3 className="languages-title">
             Languages and <span>Frameworks</span>
