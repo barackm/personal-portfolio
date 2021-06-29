@@ -220,7 +220,7 @@
     font-size: 1rem;
     border-radius: 0.3rem;
     outline: none;
-    color: $lightBlue;
+    color: lighten($lightBlue, 10%);
     height: 100%;
     padding: 1rem 1.2rem;
   }
@@ -259,7 +259,7 @@
     min-height: 10rem;
     padding: 1rem 1.2rem;
     outline: none;
-    color: $lightBlue;
+    color: lighten($lightBlue, 10%);
     font-size: 1rem;
     font-family: "Quicksand", sans-serif;
     border-radius: 0.3rem;
