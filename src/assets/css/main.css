@@ -2434,7 +2434,7 @@ li:hover ~ .cursor1 {
 
 .project-item-wrapper .project-technology-tags .project-tag {
   background-color: rgba(128, 141, 173, 0.4);
-  color: #808dad;
+  color: #b2bacd;
   font-weight: bold;
   font-size: 0.9rem;
   padding: 0.2rem 0.4rem;
@@ -2587,7 +2587,7 @@ li:hover ~ .cursor1 {
   font-size: 1rem;
   border-radius: 0.3rem;
   outline: none;
-  color: #808dad;
+  color: #9fa9c1;
   height: 100%;
   padding: 1rem 1.2rem;
 }
@@ -2666,7 +2666,7 @@ li:hover ~ .cursor1 {
   min-height: 10rem;
   padding: 1rem 1.2rem;
   outline: none;
-  color: #808dad;
+  color: #9fa9c1;
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
   border-radius: 0.3rem;
