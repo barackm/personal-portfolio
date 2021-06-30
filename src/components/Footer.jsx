@@ -39,7 +39,7 @@ export default class Footer extends Component {
               </li>
               <li data-aos="fade-right">
                 <Link to="contact" spy={true} smooth={true} duration={500}>
-                  Contact Me
+                  Contact me
                 </Link>
               </li>
             </ul>
