@@ -32,6 +32,10 @@ li {
   list-style: none;
 }
 
+li div {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -1763,22 +1767,22 @@ li:hover ~ .cursor1 {
   margin-right: 1rem;
 }
 
-.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a {
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li div {
   color: #808dad;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a:hover {
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li div:hover {
   color: #ed4a4a;
 }
 
-.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a.active {
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li div.active {
   color: #ed4a4a;
   position: relative;
 }
 
-.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a.active::after {
+.portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li div.active::after {
   content: "";
   position: absolute;
   width: 30%;
@@ -1839,7 +1843,7 @@ li:hover ~ .cursor1 {
   .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li {
     margin-right: 1rem;
   }
-  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li a {
+  .portfolio-main-container .portfolio-wrapper .portfolio-works-wrapper .links-wrapper ul li div {
     color: #808dad;
     font-size: 1.5rem;
     font-weight: bold;

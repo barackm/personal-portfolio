@@ -142,25 +142,27 @@ export default class Portfolio extends Component {
                 <h3 data-aos="fade-up">Some of my best works</h3>
                 <ul>
                   <li>
-                    <a
+                    <div
                       onClick={() => this.handleHowTab("all")}
                       className={shownTab === "all" ? "active" : ""}
                     >
                       All
-                    </a>
+                    </div>
                   </li>
                   <li onClick={() => this.handleHowTab("web")}>
-                    <a className={shownTab === "web" ? "active" : ""}>Web</a>
+                    <div className={shownTab === "web" ? "active" : ""}>
+                      Web
+                    </div>
                   </li>
                   <li onClick={() => this.handleHowTab("mobile")}>
-                    <a className={shownTab === "mobile" ? "active" : ""}>
+                    <div className={shownTab === "mobile" ? "active" : ""}>
                       Mobile{" "}
-                    </a>
+                    </div>
                   </li>
                   <li onClick={() => this.handleHowTab("backend")}>
-                    <a className={shownTab === "backend" ? "active" : ""}>
+                    <div className={shownTab === "backend" ? "active" : ""}>
                       Backend
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </div>
