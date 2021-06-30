@@ -45,6 +45,11 @@ ul {
   margin: 0;
 }
 
+img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
 h1,
 h2,
 h3,
