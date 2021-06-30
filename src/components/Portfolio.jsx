@@ -8,7 +8,16 @@ import project6 from "../assets/images/projects/project12.png";
 import project7 from "../assets/images/projects/project10.png";
 
 export default class Portfolio extends Component {
+  state = {
+    shownTab: "all",
+  };
+
+  handleHowTab = (tab) => {
+    this.setState({ shownTab: tab });
+  };
+
   render() {
+    const { shownTab } = this.state;
     const projects = [
       {
         id: 4,
@@ -23,6 +32,8 @@ export default class Portfolio extends Component {
           { id: 2, name: "Stimulus" },
           { id: 3, name: "SCSS" },
         ],
+        category_id: 1,
+        animation: "zoom-in-up",
       },
       {
         id: 2,
@@ -37,6 +48,8 @@ export default class Portfolio extends Component {
           { id: 2, name: "ReactJs" },
           { id: 3, name: "SCSS" },
         ],
+        category_id: 1,
+        animation: "zoom-in-up",
       },
       {
         id: 5,
@@ -47,6 +60,8 @@ export default class Portfolio extends Component {
         demoLink: "https://github.com/barackm/Doctor-App",
         sourceCodeLink: "https://github.com/barackm/Doctor-App",
         technologies: [{ id: 1, name: "React Native" }],
+        category_id: 2,
+        animation: "fade-down-left",
       },
       {
         id: 6,
@@ -61,6 +76,8 @@ export default class Portfolio extends Component {
           { id: 2, name: "Stimulus" },
           { id: 3, name: "SCSS" },
         ],
+        category_id: 3,
+        animation: "flip-left",
       },
       {
         id: 1,
@@ -75,6 +92,8 @@ export default class Portfolio extends Component {
           { id: 2, name: "ReactJs" },
           { id: 3, name: "SCSS" },
         ],
+        category_id: 1,
+        animation: "zoom-in-up",
       },
 
       {
@@ -86,39 +105,67 @@ export default class Portfolio extends Component {
         demoLink: "https://github.com/barackm/Niky-Restaurent-Bot",
         sourceCodeLink: "https://github.com/barackm/Niky-Restaurent-Bot",
         technologies: [{ id: 1, name: "Ruby" }],
+        category_id: 3,
+        animation: "flip-left",
       },
     ];
 
+    const webProjects = projects.filter((project) => project.category_id === 1);
+    const mobileProjects = projects.filter(
+      (project) => project.category_id === 2
+    );
+    const backendProjects = projects.filter(
+      (project) => project.category_id === 3
+    );
+
+    const renderProjects = () => {
+      if (shownTab === "all") {
+        return projects;
+      } else if (shownTab === "mobile") {
+        return mobileProjects;
+      } else if (shownTab === "web") {
+        return webProjects;
+      } else {
+        return backendProjects;
+      }
+    };
     return (
-      <div className="portfolio-main-container" id="portfolio">
+      <div className="portfolio-main-container" id="portfolio" name="portfolio">
         <div className="portfolio-wrapper">
           <div className="portfolio-header">
-            <div className="home-hello-wrapper ">
+            <div className="home-hello-wrapper" data-aos="fade-up">
               <div className="hello-line"></div>
               <h3 className="hero-hello">Portfolio</h3>
             </div>
             <div className="portfolio-works-wrapper">
               <div className="links-wrapper">
-                <h3>Some of my best works</h3>
+                <h3 data-aos="fade-up">Some of my best works</h3>
                 <ul>
                   <li>
-                    <a href="#t" className="active">
+                    <a
+                      onClick={() => this.handleHowTab("all")}
+                      className={shownTab === "all" ? "active" : ""}
+                    >
                       All
                     </a>
                   </li>
-                  <li>
-                    <a href="#t">Web</a>
+                  <li onClick={() => this.handleHowTab("web")}>
+                    <a className={shownTab === "web" ? "active" : ""}>Web</a>
                   </li>
-                  <li>
-                    <a href="#t">Mobile </a>
+                  <li onClick={() => this.handleHowTab("mobile")}>
+                    <a className={shownTab === "mobile" ? "active" : ""}>
+                      Mobile{" "}
+                    </a>
                   </li>
-                  <li>
-                    <a href="#t">More</a>
+                  <li onClick={() => this.handleHowTab("backend")}>
+                    <a className={shownTab === "backend" ? "active" : ""}>
+                      Backend
+                    </a>
                   </li>
                 </ul>
               </div>
               <div className="projects-grid-wrapper">
-                {projects.map((project) => (
+                {renderProjects().map((project) => (
                   <ProjectCard key={project.id} project={project} />
                 ))}
               </div>

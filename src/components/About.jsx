@@ -4,32 +4,33 @@ import { BiDownload } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
 import project from "../assets/images/project1.png";
 import resume from "../assets/Baraka-mukelenga-Resume.pdf";
+import { Link } from "react-scroll";
 
 export default class About extends Component {
   render() {
     return (
-      <div className="about-page-main-container">
+      <div className="about-page-main-container" id="about" name="about">
         <div className="right-area-main-container">
-          <div className="home-hello-wrapper ">
+          <div className="home-hello-wrapper " data-aos="fade-up">
             <div className="hello-line"></div>
             <h3 className="hero-hello">About me</h3>
           </div>
-          <h2 className="slogan">
+          <h2 className="slogan" data-aos="fade-up">
             Hi, Here I am
             <br /> To help your next project
           </h2>
 
-          <p className="about-work">
+          <p className="about-work" data-aos="fade-up">
             I'm Baraka Mukelenga a software developer specialized in different
             technologies ,Building web applications, Mobile apps and beautiful
             websites for companies. Love digging into hard problems, learning
             new languages and technologies.
           </p>
-          <h3 className="languages-title">
+          <h3 className="languages-title" data-aos="fade-up">
             Languages and <span>Frameworks</span>
           </h3>
           <div className="about-work-details-wrapper">
-            <div className="work-about-item-wrapper">
+            <div className="work-about-item-wrapper" data-aos="fade-up-right">
               <div className="check-icon">
                 <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
@@ -37,7 +38,7 @@ export default class About extends Component {
               </div>
               <h3>Ruby</h3>
             </div>
-            <div className="work-about-item-wrapper">
+            <div className="work-about-item-wrapper" data-aos="fade-up-left">
               <div className="check-icon">
                 <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
@@ -45,7 +46,7 @@ export default class About extends Component {
               </div>
               <h3>Javascript</h3>
             </div>
-            <div className="work-about-item-wrapper">
+            <div className="work-about-item-wrapper" data-aos="fade-up-right">
               <div className="check-icon">
                 <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
@@ -53,7 +54,7 @@ export default class About extends Component {
               </div>
               <h3>Ruby on Rails</h3>
             </div>
-            <div className="work-about-item-wrapper">
+            <div className="work-about-item-wrapper" data-aos="fade-up-left">
               <div className="check-icon">
                 <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
@@ -61,7 +62,7 @@ export default class About extends Component {
               </div>
               <h3>NodeJS</h3>
             </div>
-            <div className="work-about-item-wrapper">
+            <div className="work-about-item-wrapper" data-aos="fade-up-right">
               <div className="check-icon">
                 <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
@@ -69,7 +70,7 @@ export default class About extends Component {
               </div>
               <h3>ReactJS</h3>
             </div>
-            <div className="work-about-item-wrapper">
+            <div className="work-about-item-wrapper" data-aos="fade-up-left">
               <div className="check-icon">
                 <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
@@ -78,10 +79,16 @@ export default class About extends Component {
               <h3>React Native</h3>
             </div>
           </div>
-          <div className="btn-wrapper about">
-            <a href="#portfolio" className="hire-me-btn">
+          <div className="btn-wrapper about" data-aos="fade-up">
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hire-me-btn"
+            >
               My portfolio
-            </a>
+            </Link>
             <a href={resume} download className="download-cv-btn">
               Download CV{" "}
               <IconContext.Provider value={{ className: "download-icon" }}>
@@ -90,7 +97,7 @@ export default class About extends Component {
             </a>
           </div>
         </div>
-        <div className="right-about-page-area">
+        <div className="right-about-page-area" data-aos="fade-up-left">
           <div className="image-container">
             <img src={project} alt="project" className="project-about-img" />
             <svg

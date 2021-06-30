@@ -9,15 +9,17 @@ import {
   FiGithub,
   FiLinkedin,
 } from "react-icons/fi";
+import { Link } from "react-scroll";
+
 import barack from "../assets/images/project2.png";
 import resume from "../assets/Baraka-mukelenga-Resume.pdf";
 
 export default class Home extends Component {
   render() {
     return (
-      <div className="home-page-main-container">
+      <div className="home-page-main-container" name="home">
         {/* <div className="background-image"></div> */}
-        <div className="aside-links-wrapper">
+        <div className="aside-links-wrapper" data-aos="fade-up-left">
           <ul>
             <li>
               <a href="https://www.facebook.com/freddy.fumba.7/" target="blank">
@@ -74,18 +76,28 @@ export default class Home extends Component {
         </div>
         <div className="home-content-wrapper">
           <div className="home-text-content">
-            <div className="home-hello-wrapper">
+            <div className="home-hello-wrapper" data-aos="fade-up-right">
               <div className="hello-line"></div>
               <h3 className="hero-hello">Hi there,</h3>
             </div>
-            <div className="hero-text-wrapper">I am Baraka Mukelenga</div>
-            <div className="profession-area">
-              <h3 className="hero-profession">Full-stack web developper</h3>
+            <div className="hero-text-wrapper" data-aos="fade-up-right">
+              I am Baraka Mukelenga
             </div>
-            <div className="btn-wrapper">
-              <a href="#contact" className="hire-me-btn">
+            <div className="profession-area">
+              <h3 className="hero-profession" data-aos="fade-up-right">
+                Full-stack web developper
+              </h3>
+            </div>
+            <div className="btn-wrapper" data-aos="fade-up">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hire-me-btn"
+              >
                 Hire Me
-              </a>
+              </Link>
               <a href={resume} download className="download-cv-btn">
                 Download CV{" "}
                 <IconContext.Provider value={{ className: "download-icon" }}>
@@ -94,7 +106,7 @@ export default class Home extends Component {
               </a>
             </div>
           </div>
-          <div className="image-content-wrapper">
+          <div className="image-content-wrapper" data-aos="zoom-in">
             <div className="image-wrapper">
               <img src={barack} alt="" className="home-image" />
 

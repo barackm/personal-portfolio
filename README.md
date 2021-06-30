@@ -13,7 +13,7 @@ This website was designed with the tools below:
 
 ## Live Demo
 
-[Visit the website](https://barack.netlify.app)
+[Visit the website](https://barackm.me/)
 
 ## Getting Started
 

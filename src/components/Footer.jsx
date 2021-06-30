@@ -8,6 +8,7 @@ import {
   FiGithub,
   FiLinkedin,
 } from "react-icons/fi";
+import { Link } from "react-scroll";
 
 export default class Footer extends Component {
   render() {
@@ -16,22 +17,30 @@ export default class Footer extends Component {
         <div className="footer-content-container">
           <div className="footer-up">
             <ul className="links-pages">
-              <li>
-                <a href="#home" className="active">
+              <li data-aos="fade-right">
+                <Link to="home" spy={true} smooth={true} duration={500}>
                   Home
-                </a>
+                </Link>
               </li>
-              <li>
-                <a href="#about">About</a>
+              <li data-aos="fade-right">
+                <Link to="about" spy={true} smooth={true} duration={500}>
+                  About
+                </Link>
               </li>
-              <li>
-                <a href="#services">Services</a>
+              <li data-aos="fade-right">
+                <Link to="work" spy={true} smooth={true} duration={500}>
+                  Work
+                </Link>
               </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
+              <li data-aos="fade-right">
+                <Link to="portfolio" spy={true} smooth={true} duration={500}>
+                  Portfolio
+                </Link>
               </li>
-              <li>
-                <a href="#contact">Contact Me</a>
+              <li data-aos="fade-right">
+                <Link to="contact" spy={true} smooth={true} duration={500}>
+                  Contact Me
+                </Link>
               </li>
             </ul>
 

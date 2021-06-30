@@ -3,8 +3,9 @@ import { IconContext } from "react-icons";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 // import MagnetMouse from "./utils/magnentMouse";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
+// Or Access Link,Element,etc as follows
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -13,10 +14,10 @@ class Header extends Component {
   }
   state = {
     links: [
-      { id: 1, name: "Home", to: "/home", class: "" },
-      { id: 2, name: "About", to: "/about", class: "" },
-      { id: 3, name: "Services", to: "/services", class: "" },
-      { id: 4, name: "Portfolio", to: "/portfolio", class: "" },
+      { id: 1, name: "Home", to: "home", class: "" },
+      { id: 2, name: "About", to: "about", class: "" },
+      { id: 3, name: "Work", to: "work", class: "" },
+      { id: 4, name: "Portfolio", to: "portfolio", class: "" },
       { id: 5, name: "contact", to: "contact", class: "" },
     ],
   };
@@ -61,13 +62,25 @@ class Header extends Component {
     this.setState({ links });
   };
   handleCursorEnter = () => {};
+  closeMenu = () => {
+    this.navbar.current.classList.remove("open");
+    this.menu.current.classList.remove("open");
+  };
 
   render() {
     return (
       <header>
         <nav className="header-main-container" ref={this.menu}>
           <div className="logo-container">
-            <a href="#f" className="logo-area">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              delay={800}
+              className="logo-area"
+              onClick={this.closeMenu}
+            >
               <svg
                 className="logo-wrapper"
                 viewBox="0 0 157 149"
@@ -111,7 +124,7 @@ class Header extends Component {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="hamburger-container">
             <div className="hamburger-area" onClick={this.handleShowLinks}>
@@ -135,7 +148,15 @@ class Header extends Component {
                   className={link.class}
                   key={link.id}
                 >
-                  <Link to={link.to} href="#1" key={link.id}>
+                  <Link
+                    to={link.to}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    delay={800}
+                    key={link.id}
+                    onClick={this.handleShowLinks}
+                  >
                     {link.name}
                   </Link>
                   <div className="link-number">0{index + 1}</div>

@@ -20,7 +20,7 @@ export default function Contact() {
   const [state, handleSubmit] = useForm("xyylpkll");
 
   const Message = () => (
-    <div className="contact-page-main-container" id="contact">
+    <div className="contact-page-main-container" id="contact" name="contact">
       <div className="contact-page-wrapper">
         <div className="contact-details-wrapper">
           <div className="home-hello-wrapper ">
@@ -160,20 +160,22 @@ export default function Contact() {
     <div className="contact-page-main-container" id="contact">
       <div className="contact-page-wrapper">
         <div className="contact-details-wrapper">
-          <div className="home-hello-wrapper ">
+          <div className="home-hello-wrapper" data-aos="fade-down">
             <div className="hello-line"></div>
             <h3 className="hero-hello">Contact me</h3>
           </div>
-          <h2 className="slogan">Let's do it together</h2>
+          <h2 className="slogan" data-aos="fade-down">
+            Let's do it together
+          </h2>
 
-          <p className="about-work">
+          <p className="about-work" data-aos="fade-down">
             Question, comment or concern? this contact form is the best way to
             get in touch with me.
           </p>
 
           <div className="contact-address-wrapper">
             <ul>
-              <li>
+              <li data-aos="fade-down-right">
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
@@ -185,7 +187,7 @@ export default function Contact() {
                   Kigali - Rwanda
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-down-right">
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
@@ -197,7 +199,7 @@ export default function Contact() {
                   barackmukelenga100@gmail.com
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-down-right">
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
@@ -213,7 +215,7 @@ export default function Contact() {
           </div>
           <div className="contact-links-wrapper">
             <ul>
-              <li>
+              <li data-aos="fade-right">
                 <a
                   href="https://www.facebook.com/freddy.fumba.7/"
                   target="blank"
@@ -225,7 +227,7 @@ export default function Contact() {
                   </IconContext.Provider>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-right">
                 <a
                   href="https://www.instagram.com/barackmukelenga/"
                   target="blank"
@@ -237,7 +239,7 @@ export default function Contact() {
                   </IconContext.Provider>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-right">
                 <a href="https://github.com/barackm" target="blank">
                   <IconContext.Provider
                     value={{ className: "contact-link-icon" }}
@@ -246,7 +248,7 @@ export default function Contact() {
                   </IconContext.Provider>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-right">
                 <a href="https://twitter.com/BarackMukelenga" target="blank">
                   <IconContext.Provider
                     value={{ className: "contact-link-icon" }}
@@ -255,7 +257,7 @@ export default function Contact() {
                   </IconContext.Provider>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-right">
                 <a
                   href="https://www.linkedin.com/in/baraka-mukelenga/"
                   target="blank"
@@ -271,7 +273,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="contact-form-wrapper">
+        <div className="contact-form-wrapper" data-aos="fade-left">
           <form onSubmit={handleSubmit}>
             <Input placeholder="Name" name="name" errors={state.errors} />
             <Input

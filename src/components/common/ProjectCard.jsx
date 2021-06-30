@@ -9,7 +9,11 @@ export default class ProjectCard extends Component {
     const { project } = this.props;
     return (
       <>
-        <div href="#f" className="project-item-wrapper">
+        <div
+          href="#f"
+          className="project-item-wrapper"
+          data-aos={project.animation}
+        >
           <h3 className="project-title">{project.title}</h3>
           <p className="project-details">
             {truncateStr(project.description, 100)}

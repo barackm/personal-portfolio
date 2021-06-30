@@ -4,8 +4,8 @@ import web from "../assets/images/web.png";
 export default class Work extends Component {
   render() {
     return (
-      <div className="what-i-do-main-container">
-        <div className="left-area-coontainer">
+      <div className="what-i-do-main-container" id="work" name="work">
+        <div className="left-area-coontainer" data-aos="fade-right">
           <div className="mobile-website-wrapper">
             <div className="work-item-wrapper">
               <div className="icon-wrapper">
@@ -88,16 +88,16 @@ export default class Work extends Component {
           </div>
         </div>
         <div className="right-area-main-container">
-          <div className="home-hello-wrapper ">
+          <div className="home-hello-wrapper" data-aos="fade-up">
             <div className="hello-line"></div>
             <h3 className="hero-hello">What I do</h3>
           </div>
-          <h2 className="slogan">
+          <h2 className="slogan" data-aos="fade-up">
             Better Design,
             <br /> Better experiences
           </h2>
 
-          <p className="about-work">
+          <p className="about-work" data-aos="fade-up">
             I'm Building scalable web applications, Mobile apps and beautiful
             websites for companies.
           </p>
