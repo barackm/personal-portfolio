@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 
 AOS.init({
   delay: 200,
-  duration: 700,
+  duration: 1000,
 });
 const App = () => {
   return (
