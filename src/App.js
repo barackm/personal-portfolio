@@ -6,11 +6,10 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import AOS from "aos";
 
 import "./assets/css/main.css";
 import "aos/dist/aos.css";
-AOS.init({ enable: "mobile" });
+
 class App extends React.Component {
   render() {
     return (

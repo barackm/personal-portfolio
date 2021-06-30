@@ -6,7 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import ScrollTop from "./components/ScrollTop";
 import ReactGA from "react-ga";
+import AOS from "aos";
 
+AOS.init();
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_TRACKING_ID;
 ReactGA.initialize(TRACKING_ID);
 
