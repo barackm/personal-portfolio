@@ -12,8 +12,8 @@ import "./assets/css/main.css";
 import "aos/dist/aos.css";
 
 AOS.init({
-  delay: 200,
-  duration: 1000,
+  delay: 100,
+  duration: 800,
 });
 const App = () => {
   return (
