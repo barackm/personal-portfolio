@@ -3,7 +3,7 @@ import { IconContext } from 'react-icons';
 import { BiDownload } from 'react-icons/bi';
 import { BsCheckCircle } from 'react-icons/bs';
 import project from '../assets/images/project1.png';
-import resume from '../assets/barack-Resume.pdf';
+import resume from '../assets/Barack Mukelenga Resume.pdf';
 import { Link } from 'react-scroll';
 
 export default class About extends Component {

@@ -14,7 +14,7 @@ import {
 import { Link } from 'react-scroll';
 
 import barack from '../assets/images/project2.png';
-import resume from '../assets/barack-Resume.pdf';
+import resume from '../assets/Barack Mukelenga Resume.pdf';
 
 export default class Home extends Component {
   render() {
