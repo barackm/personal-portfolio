@@ -583,7 +583,7 @@ export default class Home extends Component {
                         <AiOutlineCheck />
                       </IconContext.Provider>
                     </h2>{' '}
-                    <span>+ 3 Years</span>
+                    <span>3+ Years</span>
                   </div>
                 </div>
               </div>
