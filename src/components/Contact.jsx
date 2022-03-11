@@ -45,7 +45,7 @@ export default function Contact() {
                       <FaMapMarkerAlt />
                     </IconContext.Provider>
                   </div>
-                  Kigali - Rwanda
+                  Kigali - Rwanda, KK 8 Av 190
                 </a>
               </li>
               <li>
