@@ -110,7 +110,7 @@ export default class Home extends Component {
           </div>
           <div className="image-content-wrapper" data-aos="zoom-in">
             <div className="image-wrapper">
-              <img src={barack} alt="home-image" className="home-image" />
+              <img src={barack} alt="homeImage" className="home-image" />
               <svg
                 version="1.0"
                 className="dots-svg"

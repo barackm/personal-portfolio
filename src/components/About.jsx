@@ -101,7 +101,7 @@ export default class About extends Component {
           <div className="image-container">
             <img
               src={project}
-              alt="project-image"
+              alt="projectImage"
               className="project-about-img"
             />
             <svg
