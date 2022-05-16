@@ -1,8 +1,8 @@
-import React from "react";
-import { IconContext } from "react-icons/lib";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { useForm } from "@formspree/react";
-import { BsEnvelope } from "react-icons/bs";
+import React from 'react';
+import { IconContext } from 'react-icons/lib';
+import { FaMapMarkerAlt } from 'react-icons/fa';
+import { useForm } from '@formspree/react';
+import { BsEnvelope } from 'react-icons/bs';
 import {
   FiFacebook,
   FiPhone,
@@ -10,14 +10,14 @@ import {
   FiTwitter,
   FiGithub,
   FiLinkedin,
-} from "react-icons/fi";
+} from 'react-icons/fi';
 
-import Input from "./common/Input";
-import SubmitBtn from "./common/SubmitBtn";
-import Texterea from "./common/Texterea";
+import Input from './common/Input';
+import SubmitBtn from './common/SubmitBtn';
+import Texterea from './common/Texterea';
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm("xyylpkll");
+  const [state, handleSubmit] = useForm('xyylpkll');
 
   const Message = () => (
     <div className="contact-page-main-container" id="contact" name="contact">
@@ -40,7 +40,7 @@ export default function Contact() {
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
-                      value={{ className: "contact-address-icon" }}
+                      value={{ className: 'contact-address-icon' }}
                     >
                       <FaMapMarkerAlt />
                     </IconContext.Provider>
@@ -52,7 +52,7 @@ export default function Contact() {
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
-                      value={{ className: "contact-address-icon" }}
+                      value={{ className: 'contact-address-icon' }}
                     >
                       <BsEnvelope />
                     </IconContext.Provider>
@@ -64,7 +64,7 @@ export default function Contact() {
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
-                      value={{ className: "contact-address-icon" }}
+                      value={{ className: 'contact-address-icon' }}
                     >
                       <FiPhone />
                     </IconContext.Provider>
@@ -82,7 +82,7 @@ export default function Contact() {
                   target="blank"
                 >
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiFacebook />
                   </IconContext.Provider>
@@ -94,7 +94,7 @@ export default function Contact() {
                   target="blank"
                 >
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiInstagram />
                   </IconContext.Provider>
@@ -103,7 +103,7 @@ export default function Contact() {
               <li>
                 <a href="https://github.com/barackm" target="blank">
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiGithub />
                   </IconContext.Provider>
@@ -112,7 +112,7 @@ export default function Contact() {
               <li>
                 <a href="https://twitter.com/BarackMukelenga" target="blank">
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiTwitter />
                   </IconContext.Provider>
@@ -124,7 +124,7 @@ export default function Contact() {
                   target="blank"
                 >
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiLinkedin />
                   </IconContext.Provider>
@@ -179,7 +179,7 @@ export default function Contact() {
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
-                      value={{ className: "contact-address-icon" }}
+                      value={{ className: 'contact-address-icon' }}
                     >
                       <FaMapMarkerAlt />
                     </IconContext.Provider>
@@ -191,7 +191,7 @@ export default function Contact() {
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
-                      value={{ className: "contact-address-icon" }}
+                      value={{ className: 'contact-address-icon' }}
                     >
                       <BsEnvelope />
                     </IconContext.Provider>
@@ -203,7 +203,7 @@ export default function Contact() {
                 <a href="#f">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
-                      value={{ className: "contact-address-icon" }}
+                      value={{ className: 'contact-address-icon' }}
                     >
                       <FiPhone />
                     </IconContext.Provider>
@@ -221,7 +221,7 @@ export default function Contact() {
                   target="blank"
                 >
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiFacebook />
                   </IconContext.Provider>
@@ -233,7 +233,7 @@ export default function Contact() {
                   target="blank"
                 >
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiInstagram />
                   </IconContext.Provider>
@@ -242,7 +242,7 @@ export default function Contact() {
               <li data-aos="fade-right">
                 <a href="https://github.com/barackm" target="blank">
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiGithub />
                   </IconContext.Provider>
@@ -251,7 +251,7 @@ export default function Contact() {
               <li data-aos="fade-right">
                 <a href="https://twitter.com/BarackMukelenga" target="blank">
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiTwitter />
                   </IconContext.Provider>
@@ -263,7 +263,7 @@ export default function Contact() {
                   target="blank"
                 >
                   <IconContext.Provider
-                    value={{ className: "contact-link-icon" }}
+                    value={{ className: 'contact-link-icon' }}
                   >
                     <FiLinkedin />
                   </IconContext.Provider>
