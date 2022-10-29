@@ -3,7 +3,6 @@
 
 .header-main-container {
   padding: 20px 0;
-
   @include spaceBetween(row);
 
   z-index: 99999;
@@ -301,23 +300,38 @@ svg {
   .navbar-overlay-main-container {
     width: 5px;
     height: 5px;
-    border-radius: 50%;
-    // background-color: #1d1c1c;
-    // background-color: darken($white, 25%);
     background-color: #f9f9f9;
     position: absolute;
     top: 40px;
     right: 40px;
     transition: all 1.5s ease;
-    // transition-duration: 2s;
+    border-radius: 50%;
   }
 
   &.open {
     .navbar-overlay-main-container {
+      border-radius: 50%;
+      width: 200vw;
+      height: 200vw;
       top: -50%;
       right: -50%;
-      width: 2800px;
-      height: 2800px;
+      transition: all 1.5s ease;
+    }
+
+    @keyframes animateOverlay {
+      from {
+        width: 5px;
+        height: 5px;
+        top: 40px;
+        right: 40px;
+      }
+
+      to {
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        right: -50%;
+      }
     }
 
     .menu-text {
@@ -400,7 +414,7 @@ svg {
   }
 }
 
-li:hover ~ .cursor1 {
+li:hover~.cursor1 {
   transform: translate(-50%, -50%) scale(1.5);
   background-color: rgba($color: $white, $alpha: 0.2);
   opacity: 0.5;
@@ -568,5 +582,6 @@ li:hover ~ .cursor1 {
     }
   }
 }
+
 // stylelint-enable no-descending-specificity
 // stylelint-enable no-duplicate-selectors

@@ -2,10 +2,8 @@ import React, { Component, createRef } from 'react';
 import { IconContext } from 'react-icons';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai';
-// import MagnetMouse from "./utils/magnentMouse";
 import { Link } from 'react-scroll';
 
-// Or Access Link,Element,etc as follows
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -28,26 +26,9 @@ class Header extends Component {
       { id: 5, name: 'contact', to: 'contact', class: '' },
     ],
   };
-  componentDidMount() {
-    // const cursor1 = document.querySelector(".cursor1");
-    // const cursor2 = document.querySelector(".cursor2");
-    // window.addEventListener("mousemove", (e) => {
-    //   cursor1.style.cssText = cursor2.style.cssText =
-    //     "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-    // });
-    // let mm = new MagnetMouse({
-    //   magnet: {
-    //     element: ".hamburger-area",
-    //   },
-    // });
-    // mm.init();
-  }
-
   handleShowLinks = () => {
     this.navbar.current.classList.toggle('open');
     this.menu.current.classList.toggle('open');
-    // document.querySelector(".cursor1").classList.toggle("open");
-    // document.querySelector(".cursor2").classList.toggle("open");
   };
   handleHover = (link) => {
     const links = this.state.links.map((item) => {
