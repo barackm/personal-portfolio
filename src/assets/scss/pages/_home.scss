@@ -2,7 +2,7 @@
   @include flexCenter(row);
 
   position: relative;
-  min-height: 700px;
+  min-height: 850px;
 
   .aside-links-wrapper {
     position: absolute;
@@ -76,6 +76,7 @@
           max-width: 93%;
           height: 93%;
           border-radius: 0.5rem;
+          object-fit: cover;
         }
 
         .dots-svg {
@@ -133,6 +134,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             z-index: -1;
           }
