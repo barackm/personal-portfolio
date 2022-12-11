@@ -103,7 +103,6 @@
   background-color: rgba($lightBlue, 0.1);
   border-radius: 0.7rem;
   padding: 2rem 1rem;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
 
@@ -124,16 +123,18 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    .project-tag {
-      background-color: rgba($lightBlue, 0.4);
-      color: lighten(#808dad, 16%);
-      font-weight: bold;
-      font-size: 0.9rem;
-      padding: 0.2rem 0.4rem;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-      border-radius: 0.2rem;
-    }
+
+  }
+
+  .project-tag {
+    background-color: rgba($lightBlue, 0.4);
+    color: lighten(#808dad, 16%);
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
   }
 
   .project-links {

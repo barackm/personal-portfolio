@@ -121,3 +121,20 @@
     }
   }
 }
+
+
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  .project-tag-item {
+    color: $lightBlue;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+}
