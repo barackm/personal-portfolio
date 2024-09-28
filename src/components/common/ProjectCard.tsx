@@ -1,42 +1,41 @@
-import React from 'react';
-import { IconContext } from 'react-icons';
-import { FiExternalLink } from 'react-icons/fi';
-import { AiFillGithub } from 'react-icons/ai';
+import React from "react";
+import { IconContext } from "react-icons";
+import { FiExternalLink } from "react-icons/fi";
+import { AiFillGithub } from "react-icons/ai";
+import { Project } from "../../utlis/types";
 
-const ProjectCard = (props) => {
+type Props = {
+  project: Project;
+};
+
+const ProjectCard = (props: Props) => {
   const { project } = props;
-  const {
-    sourceCodeUrl,
-    description,
-    imageUrl,
-    liveDemoUrl,
-    tags,
-    technologies,
-    title,
-    animation,
-  } = project;
+  const { sourceCodeUrl, description, image_url, liveDemoUrl, tags, technologies, title, animation } = project;
+  const splitTags = tags?.split(",") || [];
+  const splitTechnologies = technologies?.split(",") || [];
+
   return (
     <>
-      <div href='#f' className='project-item-wrapper' data-aos={animation}>
+      <div className='project-item-wrapper' data-aos={animation}>
         <div className='project-card-upper-side'>
           <h3 className='project-title'>{title}</h3>
           <p className='project-details'>{description}</p>
           <div className='project-links'>
             <a href={liveDemoUrl} target='blank'>
-              Live Demo{' '}
-              <IconContext.Provider value={{ className: 'project-link' }}>
+              Live Demo{" "}
+              <IconContext.Provider value={{ className: "project-link" }}>
                 <FiExternalLink />
               </IconContext.Provider>
             </a>
             <a href={sourceCodeUrl} target='blank'>
               Source code
-              <IconContext.Provider value={{ className: 'project-link' }}>
+              <IconContext.Provider value={{ className: "project-link" }}>
                 <AiFillGithub />
               </IconContext.Provider>
             </a>
           </div>
           <div className='project-technology-tags'>
-            {technologies.map((techno) => (
+            {splitTechnologies.map((techno) => (
               <div key={techno} className='project-tag'>
                 {techno}
               </div>
@@ -44,7 +43,7 @@ const ProjectCard = (props) => {
           </div>
           {/* tags */}
           <div className='project-tags'>
-            {tags.map((tag) => (
+            {splitTags.map((tag) => (
               <div key={tag} className='project-tag-item'>
                 #{tag}
               </div>
@@ -52,7 +51,7 @@ const ProjectCard = (props) => {
           </div>
         </div>
         <div className='project-images-preview'>
-          <img src={imageUrl} alt="project" />
+          <img src={image_url} alt='project' />
         </div>
       </div>
     </>

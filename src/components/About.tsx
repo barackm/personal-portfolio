@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import { IconContext } from 'react-icons';
-import { BiDownload } from 'react-icons/bi';
-import { BsCheckCircle } from 'react-icons/bs';
-import project from '../assets/images/project1.png';
-import resume from '../assets/Barack Mukelenga Resume.pdf';
-import { Link } from 'react-scroll';
+import React, { Component } from "react";
+import { IconContext } from "react-icons";
+import { BiDownload } from "react-icons/bi";
+import { BsCheckCircle } from "react-icons/bs";
+// import project from '../assets/images/project1.png';
+// import resume from '../assets/Barack Mukelenga Resume.pdf';
+import { Link } from "react-scroll";
 
 export default class About extends Component {
   render() {
     return (
-      <div className='about-page-main-container' id='about' name='about'>
+      <div className='about-page-main-container' id='about'>
         <div className='right-area-main-container'>
           <div className='home-hello-wrapper ' data-aos='fade-up'>
             <div className='hello-line'></div>
@@ -21,16 +21,13 @@ export default class About extends Component {
           </h2>
 
           <p className='about-work' data-aos='fade-up'>
-            I am Baraka Mukelenga, a skilled Software Engineer with 4 years of
-            experience designing and developing innovative web applications
-            using the latest technologies. With a strong passion for building
-            responsive, user-friendly interfaces, I am dedicated to creating
-            high-quality, performant applications that deliver an exceptional
-            user experience. My expertise includes developing scalable front-end
-            architectures, integrating RESTful APIs, and optimizing application
-            performance. Additionally, I am a proactive problem-solver and a
-            collaborative team player, always striving to find the most
-            effective and efficient solutions for my projects.
+            I am Baraka Mukelenga, a skilled Software Engineer with 4 years of experience designing and developing
+            innovative web applications using the latest technologies. With a strong passion for building responsive,
+            user-friendly interfaces, I am dedicated to creating high-quality, performant applications that deliver an
+            exceptional user experience. My expertise includes developing scalable front-end architectures, integrating
+            RESTful APIs, and optimizing application performance. Additionally, I am a proactive problem-solver and a
+            collaborative team player, always striving to find the most effective and efficient solutions for my
+            projects.
           </p>
           <h3 className='languages-title' data-aos='fade-up'>
             Languages and <span>Frameworks</span>
@@ -38,7 +35,7 @@ export default class About extends Component {
           <div className='about-work-details-wrapper'>
             <div className='work-about-item-wrapper' data-aos='fade-up-right'>
               <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
@@ -46,7 +43,7 @@ export default class About extends Component {
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-left'>
               <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
@@ -54,7 +51,7 @@ export default class About extends Component {
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-right'>
               <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
@@ -62,7 +59,7 @@ export default class About extends Component {
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-left'>
               <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
@@ -70,7 +67,7 @@ export default class About extends Component {
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-right'>
               <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
@@ -78,7 +75,7 @@ export default class About extends Component {
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-left'>
               <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
@@ -87,7 +84,7 @@ export default class About extends Component {
 
             <div className='work-about-item-wrapper' data-aos='fade-up-left'>
               <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                <IconContext.Provider value={{ className: "check-list-icon" }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
@@ -95,18 +92,12 @@ export default class About extends Component {
             </div>
           </div>
           <div className='btn-wrapper about' data-aos='fade-up'>
-            <Link
-              to='portfolio'
-              spy={true}
-              smooth={true}
-              duration={500}
-              className='hire-me-btn'
-            >
+            <Link to='portfolio' spy={true} smooth={true} duration={500} className='hire-me-btn'>
               My portfolio
             </Link>
-            <a href={resume} download className='download-cv-btn'>
-              Download CV{' '}
-              <IconContext.Provider value={{ className: 'download-icon' }}>
+            <a href='#' download className='download-cv-btn'>
+              Download CV{" "}
+              <IconContext.Provider value={{ className: "download-icon" }}>
                 <BiDownload />
               </IconContext.Provider>
             </a>
@@ -114,11 +105,7 @@ export default class About extends Component {
         </div>
         <div className='right-about-page-area' data-aos='fade-up-left'>
           <div className='image-container'>
-            <img
-              src={project}
-              alt='projectImage'
-              className='project-about-img'
-            />
+            <img src='/images/project1.png' alt='projectImage' className='project-about-img' />
             <svg
               version='1.0'
               className='dots-svg about'
@@ -127,11 +114,7 @@ export default class About extends Component {
               preserveAspectRatio='xMidYMid meet'
             >
               <metadata></metadata>
-              <g
-                transform='translate(0.000000,1280.000000) scale(0.100000,-0.100000)'
-                fill='#000000'
-                stroke='none'
-              >
+              <g transform='translate(0.000000,1280.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
                 <path
                   d='M500 12647 c-176 -60 -303 -191 -354 -366 -86 -295 177 -631 494
 -631 266 0 510 244 510 510 0 219 -165 428 -389 494 -78 23 -182 20 -261 -7z'

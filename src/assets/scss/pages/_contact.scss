@@ -66,12 +66,14 @@
             a {
               width: auto;
               padding: 0;
+              color: $lightBlue;
 
               &:first-child {
                 margin-left: -1rem;
               }
 
               &:hover {
+                color: $primary;
                 .contact-address-icon {
                   color: $primary !important;
                 }
@@ -113,7 +115,7 @@
   }
 
   .form-submission-message {
-    color: $white;
+    color: $lightBlue;
     font-size: 1.2rem;
     font-weight: bold;
   }
@@ -161,5 +163,18 @@
         margin-right: 8rem;
       }
     }
+  }
+}
+
+.input-error-message {
+  color: $primary;
+  font-size: 0.8rem;
+  font-weight: medium;
+  margin-top: 0.5rem;
+}
+
+.form-content {
+  &.hidden {
+    opacity: 0;
   }
 }
