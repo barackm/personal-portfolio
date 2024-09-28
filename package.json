@@ -1,9 +1,6 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "engines": {
-    "node": ">=16.x"
-  },
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "@hookform/resolvers": "^3.9.0",
@@ -56,6 +53,12 @@
       "last 1 safari version"
     ]
   },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",
