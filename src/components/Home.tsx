@@ -38,6 +38,12 @@ const socialLinks = [
 const Home: React.FC = () => {
   return (
     <div className='home-page-main-container'>
+      <img src='/images/hero-abstract-illustration.png' alt='hero' className='home-rolling-abstract' />
+      <img src='/images/person.png' alt='hero' className='home-character' />
+      <div className='home-hiro-abstract'>
+        <div className='hero-image-overlay' />
+        <img src='/images/frame2.png' alt='hero' />
+      </div>
       <aside className='aside-links-wrapper' data-aos='fade-up-left'>
         <ul>
           {socialLinks.map((link) => (
@@ -75,37 +81,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className='image-content-wrapper' data-aos='zoom-in'>
-          <div className='image-wrapper'>
-            <div className='play-icon-wrapper'>
-              <div className='play-container'>
-                <IconContext.Provider value={{ className: "icon-play" }}>
-                  <FaPlay />
-                </IconContext.Provider>
-              </div>
-            </div>
-
-            <div className='years-of-experience'>
-              <div className='blur-area'></div>
-              <div className='icon-wrapper'>
-                <IconContext.Provider value={{ className: "computer-icon" }}>
-                  <FaLaptopCode />
-                </IconContext.Provider>
-              </div>
-              <div className='experience-text'>
-                <h5>Experience</h5>
-                <div className='years-wrapper'>
-                  <h2>
-                    <IconContext.Provider value={{ className: "check-icon" }}>
-                      <AiOutlineCheck />
-                    </IconContext.Provider>
-                  </h2>
-                  <span>4+ Years</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className='image-content-wrapper' data-aos='zoom-in'></div>
       </section>
     </div>
   );
