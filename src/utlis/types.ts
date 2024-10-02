@@ -3,8 +3,8 @@ export interface Project {
   title: string;
   description: string;
   image_url: string;
-  liveDemoUrl: string;
-  sourceCodeUrl: string;
+  live_demo_url: string;
+  source_code_url: string;
   category_id: string;
   animation: string;
   tags: string;

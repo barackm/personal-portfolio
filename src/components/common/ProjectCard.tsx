@@ -10,9 +10,11 @@ type Props = {
 
 const ProjectCard = (props: Props) => {
   const { project } = props;
-  const { sourceCodeUrl, description, image_url, liveDemoUrl, tags, technologies, title, animation } = project;
+  const { source_code_url, description, image_url, live_demo_url, tags, technologies, title, animation } = project;
   const splitTags = tags?.split(",") || [];
   const splitTechnologies = technologies?.split(",") || [];
+
+  console.log({ project });
 
   return (
     <>
@@ -21,13 +23,13 @@ const ProjectCard = (props: Props) => {
           <h3 className='project-title'>{title}</h3>
           <p className='project-details'>{description}</p>
           <div className='project-links'>
-            <a href={liveDemoUrl} target='blank'>
+            <a href={live_demo_url} target='_blank'>
               Live Demo{" "}
               <IconContext.Provider value={{ className: "project-link" }}>
                 <FiExternalLink />
               </IconContext.Provider>
             </a>
-            <a href={sourceCodeUrl} target='blank'>
+            <a href={source_code_url} target='_blank'>
               Source code
               <IconContext.Provider value={{ className: "project-link" }}>
                 <AiFillGithub />
