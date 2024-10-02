@@ -55,7 +55,7 @@ const Portfolio = () => {
     ? projects
     : projects.filter((project) => project.category_id === selectedCategory.id);
 
-  console.log({ projects, categories });
+  const sortedProjects = projectsList.sort((a, b) => a.order - b.order);
 
   return (
     <div className='portfolio-main-container' id='portfolio'>
@@ -89,7 +89,7 @@ const Portfolio = () => {
               </ul>
             </div>
             <div className='projects-grid-wrapper'>
-              {projectsList.map((project) => (
+              {sortedProjects.map((project) => (
                 <ProjectCard key={project._id} project={project} />
               ))}
             </div>
